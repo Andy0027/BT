@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import blog1 from "../assets/images/blog-1.png";
-import blog2 from "../assets/images/blog-2.png";
-import blog3 from "../assets/images/blog-3.png";
+import blog1 from "../assets/images/Business professional with cloud computing icons.png";
+import blog2 from "../assets/images/Monitoring system performance in the server room.png";
+import blog3 from "../assets/images/Coding in the server room.png";
 import report1 from "../assets/images/report-1.png";
 import report2 from "../assets/images/report-2.png";
 import report3 from "../assets/images/report-3.png";
