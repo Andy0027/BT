@@ -1,0 +1,31 @@
+.assetIcon{
+    border-radius: 4px;
+    padding:10px;
+    color:white;
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.1) 0%,rgb(27, 27, 37) 100%);
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 2px 1px;
+}
+
+.assetIcon svg{
+    display: inline-block;
+    fill:  rgb(247, 247, 248);
+    color: rgb(247, 247, 248);
+    font-size: 1.5rem;
+}
+
+.assetIcon{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    width: min-content;
+}

@@ -1,0 +1,75 @@
+
+
+
+.hero_bg{
+    /* background:linear-gradient(90deg,#0d0d1700 100%,#0d0d1700 100%);
+    background:linear-gradient(180deg,#0d0d1700 100%,#0d0d1700 100%); */
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 9;
+    
+    
+}
+
+.hero_section{
+    background:#0d0d17;
+    width: 100%;
+    height: auto;
+}
+
+.hero_bg img{
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.db_image{
+   /* background-image: url('../assets/images/Dashboard.png'); */
+   width: 100%;
+   height: 100%;
+   margin-top: -35px;
+   position: relative;
+   z-index: 9;
+   padding: 0 8rem;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(13, 13, 23, 0) 0%, rgb(13, 13, 23), rgb(13, 13, 23)) 100%;
+    padding: 50px;
+    margin-top: -65px;
+    position: relative;
+    z-index: 99;
+}
+
+
+.video_bg{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(13, 13, 23) 0%, rgba(13, 13, 23, 0.417), rgb(13, 13, 23)) 100%;
+    /* background: red; */
+    position: absolute;
+    top: 0px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .db_image {
+      padding: 0 4rem;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 640px) {
+    .db_image {
+      padding: 0 1rem;
+      margin-top: -43px; 
+      
+    }
+  }

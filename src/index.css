@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:Instrument Bold ;
+    src: url('./assets/fonts/InstrumentSans-Bold.ttf');
+}
+@font-face {
+    font-family:Instrument Medium ;
+    src: url('./assets/fonts/InstrumentSans-Medium.ttf');
+}
+
+h1{
+    font-family: Instrument Bold;
+}
+
+p{
+    font-family:Instrument Medium;
+}
+
+
+.nav{
+    box-shadow: #2e5e990c 0px 2px 4px 0px, #2e5e9925 0px 2px 16px 0px;
+    background: linear-gradient(180deg, #2e5e991b 0%, #2e5e9923), #2e5e9919 100%;
+}
+
+.contact_bg{
+    background-image:linear-gradient(180deg,#0000001e 0%,#000000ea 100%),url('./assets/images/contact_bg.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.companysado{
+    background: linear-gradient( #0D2440 , #0D2440);
+   }
+
+   .company_bg{
+    background: linear-gradient(180deg, rgba(13, 36, 64, 0) 0%, rgb(13, 36, 64), rgb(13, 36, 64)) 51.80180180180181%;
+   }
+
+
+.reputation_bg{
+    /* background-image:linear-gradient(180deg, #0e0e15 0%,#555555, #fff 100%); */
+    margin-top: -34px;
+}
+
+.software_bg{
+    background-image:linear-gradient(180deg, #E7F0FA 0%,#E7F0FA 50%, #0D2440 100%);
+}
+ 
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff;
+    border-radius: 10px;
+}
+
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient( #2E5E99 0%, #0D2440, #0D2440);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    
+}
+
+
+
+.text-white{
+    color: rgb(217, 214, 214) !important;
+}
