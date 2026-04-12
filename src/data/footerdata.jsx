@@ -1,7 +1,7 @@
 export let solutions = [
     {
         name:"Cloud Infrastructure",
-        to:"orm"
+        to:"cloud-infrastructure"
     },
     {
         name:"IaaS Solutions",
@@ -46,7 +46,7 @@ export let company = [
     },
     {
         name:"Become a Partner",
-        to:"partner"
+        to:"become-a-partner"
     },
     {
         name:"Contact Us",

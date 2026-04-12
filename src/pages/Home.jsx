@@ -240,7 +240,7 @@ function Home() {
 
 
 
-    {/* Reputation Defender */}
+    {/* Infrastructure Capabilities */}
     <section className=" z-50  relative" style={{backgroundImage: "linear-gradient(180deg, #0D2440 0%, #2E5E99, #E7F0FA 100%)"}}>
       <div className="text-center px-8 sm:px-6 md:px-10 lg:px-32">
         <h1
@@ -260,7 +260,7 @@ function Home() {
         </p>
       </div>
 
-          <div className="pt-14 pb-10 sm:pt-12   lg:pt-16 px-5 sm:px-6 md:px-10 lg:px-32  reputation_bg">
+          <div className="pt-14 pb-10 sm:pt-12   lg:pt-16 px-5 sm:px-6 md:px-10 lg:px-32  capabilities_bg">
             
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-6  lg:gap-10">
               <div data-aos="fade-up" data-aos-duration="1000">

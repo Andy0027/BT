@@ -11,6 +11,11 @@ import testimonial2 from '../assets/images/testimonial2.jpg'
 import testimonial3 from '../assets/images/testimonial3.jpg'
 import testimonial4 from '../assets/images/testimonial4.jpg'
 import testimonial5 from '../assets/images/testimonial5.jpg'
+import resourceImg1 from '../assets/images/an-isometric-3d-illustration-of-a-scalab_HXlAO6QIQ6-MciOwl2XejQ_xku9Yz_fTBSL-z2nkXHwfA_cover_sd.jpeg'
+import resourceImg2 from '../assets/images/a-cinematic-close-up-photograph-of-a-mod_3GYA4YsOSOGKRI2WiA764A_vLRvIyOtTD--Jv69VErI-A_cover_sd.jpeg'
+import resourceImg3 from '../assets/images/a-clean-minimal-workflow-automation-diag_uqQJOw88RF27NJNV2CBjEw_QXJfguVTTwGVlTECQ_zMSw_sd.jpeg'
+import resourceImg4 from '../assets/images/a-clean-technical-diagram-illustrating-s_v03XeyBsRgS9Ehv-AvrSMQ_xbCWprl2SbG19e4FwP2BcA_sd.jpeg'
+import resourceImg5 from '../assets/images/Cloud security and data backup system.png'
 
 export const toolitems = [
   {
@@ -43,42 +48,187 @@ export const toolitems = [
   },
 ];
 
-export let ormfaq = [
+export let resourcesGrid = [
     {
-    heading: "What is a reputation management plan?",
-    paragraph: "A reputation management strategy helps control your digital image, improving search results and protecting your online presence. Effective strategies combine proactive and reactive approaches to remove threats, achieve online goals and unlock growth opportunities.",
+        title: "Scalable Cloud Architecture for Modern Businesses",
+        para: "Design infrastructure that adapts to growth while maintaining performance and reliability.",
+        date: "April 2026",
+        img: resourceImg1
     },
     {
-    heading: "What's the initial step in managing your online reputation?",
-    paragraph: "Our reputation management strategy begins with in-depth research, analyzing key factors such as brand mentions, search results, competitor comparison, online sentiment, and goals. This data informs our customized strategy, designed to mitigate negative results, drive success, and adapt to emerging online threats.",
+        title: "Strengthening Cybersecurity in a Cloud-First World",
+        para: "Protect your systems with proactive strategies, real-time monitoring, and zero-trust principles.",
+        date: "April 2026",
+        img: resourceImg2
     },
     {
-    heading: "What's the significance of managing your online reputation?",
-    paragraph: "Online reputation management (ORM) helps individuals and businesses monitor, protect, and shape their online presence. It removes harmful content, influences public opinion, and creates a positive image. For individuals, ORM builds a strong online profile, while for companies, it eliminates negativity, strengthens customer relationships, and drives growth.",
+        title: "Optimizing Infrastructure Costs Without Compromise",
+        para: "Balance performance and cost-efficiency with smarter resource allocation and automation.",
+        date: "April 2026",
+        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
     },
     {
-    heading: "How does online reputation management operate?",
-    paragraph: "Reputation management is a long-term approach that combines technology, strategy, and process to improve your brand over time. It involves content removal, SEO, profile building, and monitoring to strengthen search results. While some results may take weeks, months, or even a year to achieve, a reputation specialist can help create a customized plan to take control of your online presence.",
+        title: "The Role of Automation in Cloud Operations",
+        para: "Streamline workflows and reduce manual effort with intelligent automation systems.",
+        date: "April 2026",
+        img: resourceImg3
+    },
+    {
+        title: "Ensuring High Availability Across Distributed Systems",
+        para: "Build resilient systems that minimize downtime and ensure uninterrupted performance.",
+        date: "April 2026",
+        img: resourceImg4
+    },
+    {
+        title: "Data Backup & Disaster Recovery Strategies",
+        para: "Safeguard critical data with reliable backup solutions and rapid recovery mechanisms.",
+        date: "April 2026",
+        img: resourceImg5
+    }
+];
+
+export const all_category = [
+  {
+    name: "AWS",
+    img: awsLogo,
+  },
+  {
+    name: "Google Cloud",
+    img: googleCloud,
+  },
+  {
+    name: "Docker",
+    img: docker,
+  },
+  {
+    name: "Kubernetes",
+    img: node,
+  },
+  {
+    name: "Linux",
+    img: worldwide,
+  },
+  {
+    name: "Nginx",
+    img: firebase,
+  },
+  {
+    name: "PostgreSQL",
+    img: mongodb,
+  },
+];
+
+export let cloudfaq = [
+    {
+    heading: "What is cloud infrastructure (IaaS)?",
+    paragraph: "Cloud infrastructure refers to the hardware and software components—such as servers, storage, a network, and virtualization software—that are needed to support the computing requirements of a cloud computing model.",
+    },
+    {
+    heading: "How scalable is your infrastructure?",
+    paragraph: "Our infrastructure is highly scalable, allowing you to instantly adapt to traffic spikes and process complex workloads with ease. You can effortlessly scale resources up or down on demand.",
+    },
+    {
+    heading: "How do you ensure data security?",
+    paragraph: "We employ military-grade encryption, strict access controls, and continuous real-time threat monitoring to secure your data at rest and in transit against any unauthorized access or breaches.",
+    },
+    {
+    heading: "What kind of uptime can I expect?",
+    paragraph: "Our distributed architecture and multi-region deployment guarantee high availability and minimal downtime, consistently delivering enterprise-level uptime SLAs to keep your business running.",
+    },
+    {
+    heading: "Do you provide backup and disaster recovery?",
+    paragraph: "Yes, we offer fully automated backup routines and comprehensive disaster recovery protocols to ensure that your critical data is securely replicated and quickly restorable in any event.",
+    }
+   ];
+   export let iaasfaq = [
+    {
+    heading: "What is Infrastructure as a Service (IaaS)?",
+    paragraph: "IaaS provides on-demand access to fundamental computing resources like virtual servers, storage, and networking, giving you full control over your infrastructure without managed overhead.",
+    },
+    {
+    heading: "How scalable are your cloud infrastructure solutions?",
+    paragraph: "Our IaaS solutions are designed for rapid scalability, allowing you to instantly add or remove resources as your workload demands shift, ensuring performance remains consistent.",
+    },
+    {
+    heading: "Can I customize my infrastructure setup?",
+    paragraph: "Yes, you have complete flexibility to customize compute, storage, and networking configurations to meet the specific requirements of your applications.",
+    },
+    {
+    heading: "What security measures are included?",
+    paragraph: "We provide enterprise-grade security including firewalls, encryption, and DDoS protection, combined with industry-standard compliance to keep your environment secure.",
+    },
+    {
+    heading: "Do you provide backup and disaster recovery?",
+    paragraph: "Yes, our IaaS platform includes integrated backup and disaster recovery tools to ensure business continuity and data protection across all your instances.",
     }
    ];
    export let companyfaq = [
     {
-    heading: "What is Brilliant Technologies?",
-    paragraph: "Brilliant Technologies is a full-spectrum digital solutions and cybersecurity company. We specialize in protecting businesses online while also helping them grow through custom software, smart cloud services, and digital marketing strategies.",
+    heading: "What services does Brilliant Technologies offer?",
+    paragraph: "We offer a complete ecosystem of digital solutions including Cloud Infrastructure, Cybersecurity, IaaS, specialized software development, and strategic technology consulting.",
     },
     {
-    heading: "What makes Brilliant Technologies different from other tech companies?",
-    paragraph: "We combine strong cybersecurity expertise with high-quality software solutions and digital growth strategies. Our clients get end-to-end protection + innovation, all in one place.",
+    heading: "What makes your company different?",
+    paragraph: "Our unique blend of deep technical expertise and a human-first mindset allows us to build solutions that aren't just powerful, but also intuitive and growth-oriented.",
     },
     {
-    heading: "Is Brilliant Technologies only about cybersecurity?",
-    paragraph: "Not at all. While cybersecurity is our core strength, we also provide smart tech solutions such as web & mobile development, AI integration, cloud hosting, and digital branding to help businesses scale securely.",
+    heading: "Do you provide customized solutions?",
+    paragraph: "Absolutely. Every business is unique, and we pride ourselves on building tailored technology stacks that align perfectly with your specific operational needs and goals.",
     },
     {
-    heading: "Do you offer custom packages or consultations?",
-    paragraph: "Yes! We provide tailored solutions after a free consultation to understand your needs and offer what fits best for your business goals and security demands.",
+    heading: "How do you support clients post-deployment?",
+    paragraph: "We provide 24/7 proactive monitoring and dedicated support teams to ensure your systems remain secure, updated, and highly available long after the initial launch.",
+    },
+    {
+    heading: "Which industries do you work with?",
+    paragraph: "We partner with diverse industries including Finance, Healthcare, E-commerce, and Technology, delivering enterprise-grade solutions across the global market.",
     }
    ];
+   export let partnerfaq = [
+    {
+    heading: "What types of partnerships does Brilliant Technologies offer?",
+    paragraph: "We offer various models including Growth-Driven Partnerships, Strategic Technology Alliances, Cloud & Infrastructure Partnerships, and Consulting collaborations tailored to different business scales.",
+    },
+    {
+    heading: "How can I become a partner?",
+    paragraph: "You can start by clicking the 'Become a Partner' button on this page to submit an inquiry. Our partnership team will then reach out to discuss the best model for your business.",
+    },
+    {
+    heading: "What benefits do partners receive?",
+    paragraph: "Partners gain access to enterprise-grade solutions, dedicated onboarding, co-marketing opportunities, and scalable technology stacks designed to drive mutual growth.",
+    },
+    {
+    heading: "Do you provide technical and sales support?",
+    paragraph: "Yes, we provide comprehensive technical and sales enablement, including 24/7 dedicated support and specialized partner training programs.",
+    },
+    {
+    heading: "Can startups collaborate with Brilliant Technologies?",
+    paragraph: "Absolutely. We actively foster innovation and research collaborations, and we have specialized programs designed to help startups scale securely and rapidly.",
+    }
+   ];
+   export let resourcesfaq = [
+    {
+    heading: "What kind of insights does Brilliant Technologies share?",
+    paragraph: "We share technical whitepapers, architectural best practices, cybersecurity trends, and case studies focused on enterprise cloud infrastructure.",
+    },
+    {
+    heading: "Are these based on real-world implementations?",
+    paragraph: "Yes, all our insights are derived from actual engineering challenges and successful implementations across our global client base.",
+    },
+    {
+    heading: "How frequently is new content added?",
+    paragraph: "We update our resources weekly with fresh perspectives on emerging technologies and industry-standard security practices.",
+    },
+    {
+    heading: "Can businesses request specific topics?",
+    paragraph: "Absolutely. We encourage our readers and partners to reach out with topics they'd like to see covered in our next feature.",
+    },
+    {
+    heading: "Do you provide consultation based on these insights?",
+    paragraph: "Yes, we offer specialized consulting services to help you implement the architectural and security patterns discussed in our resources.",
+    }
+   ];
+
    export let softwarefaq = [
     {
     heading: "What types of software development services do you offer?",
@@ -100,20 +250,24 @@ export let ormfaq = [
 
    export let cyberfaq = [
     {
-    heading: "What is cybersecurity and why is it important for my business?",
-    paragraph: "Cybersecurity protects your digital systems, networks, and data from unauthorized access, cyberattacks, and data breaches. It's essential for business continuity, data privacy, and protecting customer trust.",
+    heading: "What cybersecurity solutions do you offer?",
+    paragraph: "We provide a comprehensive suite including Threat Detection, Cloud Security, Application Protection, Data Privacy, and expert Security Consulting.",
     },
     {
-    heading: "How does Brilliant Technologies detect and respond to cyber threats?",
-    paragraph: "We use advanced monitoring tools, AI-driven threat intelligence, and a 24/7 security operations team to detect threats in real-time and respond instantly to minimize risk.",
+    heading: "How do you detect and prevent cyber threats?",
+    paragraph: "We use AI-driven detection systems and 24/7 real-time monitoring to identify and neutralize threats before they can impact your operations.",
     },
     {
-    heading: "Can you protect my business even if we use cloud-based applications?",
-    paragraph: "Absolutely. We offer cloud security services including secure cloud architecture, data encryption, access control, and continuous cloud monitoring.",
+    heading: "Can your solutions secure cloud-based systems?",
+    paragraph: "Yes, our Cloud & Infrastructure Security solutions are specifically designed to safeguard distributed cloud environments and networks with zero-trust protocols.",
     },
     {
-    heading: "How often should I do a vulnerability assessment or penetration test?",
-    paragraph: "We recommend doing it at least once every 6 months—or immediately after any major system change or security incident—for proactive protection.",
+    heading: "What industries do you serve?",
+    paragraph: "We serve a wide range of industries including finance, healthcare, technology, and government, providing enterprise-grade security tailored to specific regulatory needs.",
+    },
+    {
+    heading: "Do you offer continuous monitoring and support?",
+    paragraph: "Absolutely. Our 24/7 security operations center ensures continuous monitoring and proactive support to keep your business protected always.",
     }
    ];
 

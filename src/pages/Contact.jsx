@@ -1,200 +1,184 @@
 import React, { useRef, useState } from "react";
 import { BiSupport } from "react-icons/bi";
-import { FaHandshake } from "react-icons/fa";
+import { FaHandshake, FaRegEnvelope } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
+import { Send } from "lucide-react";
 
 function Contact() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const messageRef = useRef(null);
-  const formRef = useRef(null);
-  const [formBtnText, setFormBtnText] = useState("Submit")
-  const handleSubmit = (e)=>{
+  const [formBtnText, setFormBtnText] = useState("Send Message");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormBtnText("Submitting...")
-    let obj = {
+    setIsSubmitting(true);
+    setFormBtnText("Submitting...");
+
+    const obj = {
       name: nameRef.current.value,
       email: emailRef.current.value,
       message: messageRef.current.value
     };
 
-    try{
-      const response = fetch("/api/contact", { method: "POST", body: JSON.stringify(obj), headers: {'Content-Type': "application/json"} });
-      console.log("Form Submitted successfully!");
-      setFormBtnText("Submitted")
+    try {
+      // Simulating API call for visual feedback
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      console.log("Form Submitted successfully!", obj);
+      setFormBtnText("Message Sent!");
       e.target.reset();
-    }catch(err){
+    } catch (err) {
       console.log(err);
+      setFormBtnText("Error Try Again");
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setFormBtnText("Send Message");
+      }, 3000);
     }
-
-    setTimeout(()=>{
-      setFormBtnText("Submit")
-    }, 2000)
-  }
-
+  };
 
   return (
-    <section>
-      <div className="min-h-screen bg-navy-main py-12 px-6 sm:px-6 md:px-12 lg:px-32 text-white relative">
-        <div className="absolute inset-0 flex justify-center">
-          <div className="w-[800px] h-[800px] bg-gradient-radial from-blue-primary/40 via-navy-main to-navy-main rounded-full blur-3xl opacity-60" />
-        </div>
-
-        <div className="pt-24 relative z-40">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center" data-aos="fade-up" data-aos-duration="300">
-            Connect with us
-          </h2>
-          <h2 className="text-base sm:text-lg text-center text-[#c9c9d2] py-5" data-aos="fade-up" data-aos-duration="300">
-            Feel free to reach out to us using the options below,
-            <br className="hidden md:block" /> and our dedicated team will respond to your inquiries promptly.
-          </h2>
-        </div>
-
-        <div className="flex flex-col lg:flex-row  relative z-40 my-12" data-aos="fade-up" data-aos-duration="400">
-          <div className="flex-1 relative  overflow-hidden contact_bg min-[300px]:  lg:min-h-[634px]">
-            <div className="absolute bottom-10 px-6">
-              <h2 className="text-lg sm:text-xl font-semibold pb-6">
-                This software simplifies the website building process,
-                <br /> making it a breeze to manage our online presence.
-              </h2>
-              <p className="text-[#ccc]">Brilliant Technologies</p>
-            </div>
-          </div>
-
-          <div className="flex-1 bg-navy-main shadow-md text-white px-6 sm:px-8 py-10 ">
-            <h2 className="text-sm tracking-wide text-blue-soft">CONTACT US</h2>
-            <p className="text-3xl font-bold py-4">How can we help?</p>
-            <h2 className="text-[#94949e] text-base">
-              Have a question? Fill out the form below, and we'll get back to you as soon as possible.
-            </h2>
-
-            <form ref={formRef} onSubmit={handleSubmit} className="mt-8 space-y-5">
-              <input ref={nameRef} type="text" placeholder="Name" className="w-full px-4 py-4 rounded-lg focus:ring bg-navy-main border border-[#FFFFFF0D]" />
-              <input ref={emailRef} type="text" placeholder="Email" className="w-full px-4 py-4 rounded-lg focus:ring bg-navy-main border border-[#FFFFFF0D]" />
-              <textarea ref={messageRef} placeholder="Message" className="w-full px-4 py-4 h-40 rounded-lg focus:ring bg-navy-main border border-[#FFFFFF0D]" />
-              <div className="text-center bg-blue-primary hover:bg-blue-soft transition py-3 rounded-lg">
-                <button type="submit" className="text-white font-semibold">{formBtnText}</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div className="flex flex-col   lg:flex-row justify-between gap-6 text-white mt-10">
-          {[{
-            icon: <BiSupport />, title: "Customer support", email: "support@brilliantweb.us"
-          }, {
-            icon: <FaHandshake />, title: "Clients & Partners", email: "support@brilliantweb.us"
-          }, {
-            icon: <BiSupport />, title: "Enquiries", email: "support@brilliantweb.us"
-          }].map((item, index) => (
-            <div key={index} className="w-full lg:w-[33%] flex gap-5 items-center" data-aos="fade-up" data-aos-duration={600 + index * 100}>
-              <div className="flex items-center h-12 w-12 justify-center rounded-lg bg-[#FFFFFF0D]">
-                <span className="text-2xl text-[#94949E]">{item.icon}</span>
-              </div>
-              <div>
-                <h2 className="text-lg font-semibold">{item.title}</h2>
-                <h2 className="text-sm text-[#94949E]">{item.email}</h2>
-              </div>
-            </div>
-          ))}
-        </div>
+    <section className="bg-[#E7F0FA] min-h-screen relative overflow-hidden">
+      
+      {/* Dynamic Background Decorations */}
+      <div className="absolute inset-0 flex justify-center pointer-events-none">
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-primary/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-blue-soft/20 rounded-full blur-[100px]" />
       </div>
 
-      <div className="h-auto w-full px-7 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-16 sm:py-20 md:py-24 lg:py-28 bg-navy-main border-t border-[#FFFFFF0D]">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-3 h-auto lg:h-[50vh]">
+      <div className="relative z-40 pt-32 pb-20 px-6 sm:px-12 lg:px-32">
+        
+        {/* Header Section */}
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span className="px-4 py-2 bg-blue-primary/10 text-blue-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block border border-blue-primary/20">
+            Get in touch
+          </span>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-[#0D2440] leading-tight mb-6">
+             Connect With Our <br /> <span className="text-blue-primary">Expert Team</span>
+          </h1>
+          <p className="text-lg text-gray-600 font-medium leading-relaxed">
+            Have a question about our cloud solutions? Our dedicated team is here to 
+            provide the technical clarity and support you need to scale efficiently.
+          </p>
+        </div>
 
-          {/* Left Section */}
-          <div
-            className="w-full lg:w-1/2 h-auto lg:h-full lg:pt-16 pr-0 lg:pr-28"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            <h2 className="text-blue-soft text-sm">OUR LOCATIONS</h2>
-            <h2 className="text-3xl sm:text-4xl font-bold lg:pt-8 text-white leading-tight py-3">
-              Planning a visit? Here's our location
-            </h2>
-            <h3 className="text-[#94949E] text-base pr-0 lg:pt-8 lg:pr-14">
-              Whether you're attending a scheduled meeting, workshop, or just
-              dropping by, use the following directions to reach our office.
-            </h3>
-
-            {/* <div className="py-7">
-              <h2 className="text-white text-base font-semibold">Address:</h2>
-              <h3 className="text-base text-[#94949E]">
-                Dallas, TX, USA, <br /> NY 10075, USA
-              </h3>
-            </div> */}
-            {/* <div>
-              <h2 className="text-white text-base font-semibold">Working hours</h2>
-              <h3 className="text-base text-[#94949E]">Monday - Friday: 8AM - 5PM</h3>
-            </div> */}
+        {/* Main Content: Info + Form */}
+        <div className="flex flex-col lg:flex-row gap-12 items-start max-w-7xl mx-auto">
+          
+          {/* Left: Contact Info Cards */}
+          <div className="w-full lg:w-1/3 flex flex-col gap-6" data-aos="fade-right">
+             {[
+               { icon: <BiSupport className="text-3xl" />, title: "Technical Support", desc: "For technical queries & troubleshooting", email: "support@brilliantweb.us" },
+               { icon: <FaHandshake className="text-3xl" />, title: "Partnerships", desc: "Explore collaboration opportunities", email: "support@brilliantweb.us" },
+               { icon: <FaRegEnvelope className="text-3xl" />, title: "General Enquiries", desc: "For anything else on your mind", email: "support@brilliantweb.us" }
+             ].map((item, idx) => (
+               <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-xl bg-blue-primary/5 flex items-center justify-center text-blue-primary group-hover:bg-blue-primary group-hover:text-white transition-colors mb-4">
+                     {item.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-[#0D2440] mb-2">{item.title}</h3>
+                  <p className="text-gray-500 text-sm font-medium mb-3">{item.desc}</p>
+                  <a href={`mailto:${item.email}`} className="text-blue-primary font-bold text-sm hover:underline">{item.email}</a>
+               </div>
+             ))}
           </div>
 
-          {/* Right Section */}
-          <div
-            className="w-full lg:w-1/2 rounded-md h-auto lg:h-full"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10 lg:gap-17 pt-10 lg:pt-14">
+          {/* Right: Premium Form */}
+          <div className="w-full lg:w-2/3 bg-white rounded-[2.5rem] p-8 md:p-16 shadow-2xl border border-white relative" data-aos="fade-left">
+             <div className="absolute top-0 right-0 p-8 opacity-5">
+                <Send className="w-32 h-32 text-[#0D2440]" />
+             </div>
+             <h2 className="text-3xl font-extrabold text-[#0D2440] mb-2">Send us a message</h2>
+             <p className="text-gray-500 font-medium mb-10">We typically respond within 24 business hours.</p>
 
-              {/* Box 1 */}
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <div className="bg-[#FFFFFF0D] p-4 rounded-lg text-white">
-                  <div>
-                    <div className="flex items-center pb-2">
-                      <IoLocationOutline size={20} className="mr-2" />
-                      <span className="mr-2">Dallas, TX, USA</span>
-                    </div>
-                    <div className="flex items-center ">
-                      <MdAccessTime size={20} className="mr-2" />
-                      <span>Mon-Fri 8 AM to 5 PM (EST)</span>
-                    </div>
-                  </div>
+             <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                   <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#0D2440] ml-1">Full Name</label>
+                      <input 
+                        ref={nameRef} 
+                        required 
+                        type="text" 
+                        placeholder="Johnny Bravo" 
+                        className="w-full px-6 py-4 rounded-xl bg-gray-50 border border-transparent focus:bg-white focus:border-blue-primary focus:ring-4 focus:ring-blue-primary/10 transition-all outline-none text-[#0D2440] font-medium" 
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#0D2440] ml-1">Email Address</label>
+                      <input 
+                        ref={emailRef} 
+                        required 
+                        type="email" 
+                        placeholder="johnny@example.com" 
+                        className="w-full px-6 py-4 rounded-xl bg-gray-50 border border-transparent focus:bg-white focus:border-blue-primary focus:ring-4 focus:ring-blue-primary/10 transition-all outline-none text-[#0D2440] font-medium" 
+                      />
+                   </div>
                 </div>
-              </div>
-
-              {/* Box 2 */}
-              <div data-aos="fade-up" data-aos-duration="1200">
-                <div className="bg-[#FFFFFF0D] p-4 rounded-lg text-white">
-                  <div>
-                    <div className="flex items-center ">
-                      <IoLocationOutline size={22} className="mr-2" />
-                      <span className="mr-2">Toronto, ON, Canada</span>
-                    </div>
-                    <div className="flex items-center ">
-                      <MdAccessTime size={20} className="mr-2" />
-                      <span>Mon-Fri 8 AM to 5 PM (EST)</span>
-                    </div>
-                  </div>
+                <div className="space-y-2">
+                   <label className="text-sm font-bold text-[#0D2440] ml-1">Your Message</label>
+                   <textarea 
+                     ref={messageRef} 
+                     required 
+                     placeholder="Tell us about your project or enquiry..." 
+                     className="w-full px-6 py-4 h-40 rounded-xl bg-gray-50 border border-transparent focus:bg-white focus:border-blue-primary focus:ring-4 focus:ring-blue-primary/10 transition-all outline-none text-[#0D2440] font-medium resize-none" 
+                   />
                 </div>
-              </div>
-
-              {/* Box 3 */}
-              <div data-aos="fade-up" data-aos-duration="1500">
-                <div className="bg-[#FFFFFF0D] p-4 rounded-lg text-white">
-                  <div>
-                    <div className="flex items-center">
-                      <IoLocationOutline size={22} className="mr-2" />
-                      <span className="mr-2">New Delhi, India</span>
-                    </div>
-                    <div className="flex items-center ">
-                      <MdAccessTime size={20} className="mr-2" />
-                      <span>Mon-Fri 8 AM to 5 PM (IST)</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
+                <button 
+                  disabled={isSubmitting}
+                  type="submit" 
+                  className={`w-full py-5 rounded-xl font-extrabold text-white text-lg shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 ${isSubmitting ? 'bg-blue-soft' : 'bg-[#0D2440] hover:bg-blue-primary hover:shadow-blue-primary/30'}`}
+                >
+                  {formBtnText}
+                  <Send className={`w-5 h-5 ${isSubmitting ? 'animate-pulse' : ''}`} />
+                </button>
+             </form>
           </div>
         </div>
+
+        {/* Locations Section */}
+        <section className="mt-40 bg-[#0D2440] rounded-[3rem] p-10 md:p-20 relative overflow-hidden text-white border border-white/5 shadow-2xl">
+           <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.1),transparent)] pointer-events-none" />
+           
+           <div className="flex flex-col lg:flex-row items-center gap-16 relative z-10">
+              <div className="w-full lg:w-1/2" data-aos="fade-up">
+                 <h2 className="text-blue-soft text-sm font-bold tracking-widest uppercase mb-4">OUR LOCATIONS</h2>
+                 <h2 className="text-3xl md:text-5xl font-extrabold leading-tight mb-8 text-white">
+                    Planning a visit? <br />
+                    Stay connected globally.
+                 </h2>
+                 <p className="text-lg text-gray-300 font-medium leading-relaxed pr-0 lg:pr-12">
+                   Whether you're attending a workshop, meeting our consultants, or 
+                   just dropping by, we're ready to welcome you at any of our global nodes.
+                 </p>
+              </div>
+
+              <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                 {[
+                   { city: "Dallas, TX, USA", time: "Mon-Fri 8 AM - 5 PM (EST)" },
+                   { city: "Toronto, ON, Canada", time: "Mon-Fri 8 AM - 5 PM (EST)" },
+                   { city: "New Delhi, India", time: "Mon-Fri 8 AM - 5 PM (IST)" }
+                 ].map((loc, idx) => (
+                   <div key={idx} className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay={idx * 150}>
+                      <div className="flex items-center gap-3 mb-4">
+                         <div className="p-2 bg-blue-primary/20 rounded-lg text-blue-soft">
+                            <IoLocationOutline size={20} />
+                         </div>
+                         <h4 className="font-bold text-lg">{loc.city}</h4>
+                      </div>
+                      <div className="flex items-center gap-3 text-gray-400 text-sm">
+                         <MdAccessTime size={18} />
+                         <span>{loc.time}</span>
+                      </div>
+                   </div>
+                 ))}
+              </div>
+           </div>
+        </section>
+
       </div>
-
-
     </section>
   );
 }

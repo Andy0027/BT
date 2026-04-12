@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
-import { partnerfaq } from "../data/Alldata";
+import { resourcesfaq } from "../data/Alldata";
 
-const PartnerFAQ = () => {
+const ResourcesFAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -18,16 +18,16 @@ const PartnerFAQ = () => {
               FAQs
             </h2>
             <h2 className="text-2xl sm:text-3xl md:text-4xl pr-0 md:pr-8 leading-tight font-bold py-4 text-[#0D2440]">
-              Partner FAQs
+              Frequently Asked Questions
             </h2>
             <h3 className="text-base leading-7 text-gray-600 font-medium">
-              Find quick answers to common questions about our partnership model. 
-              Looking for more details? Reach out to our partnership team.
+              Find quick answers to common questions about our insights and consulting services. 
+              Looking for specialized advice? Reach out to our expert team.
             </h3>
           </div>
 
           <div className="w-full md:w-1/2 space-y-4">
-            {partnerfaq.map((faq, index) => (
+            {resourcesfaq.map((faq, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300"
@@ -61,4 +61,4 @@ const PartnerFAQ = () => {
   );
 };
 
-export default PartnerFAQ;
+export default ResourcesFAQ;

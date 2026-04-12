@@ -39,7 +39,7 @@ function MegaMenu() {
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-6 text-[15px] text-white">
-          <li><Link to="/orm">Cloud Infrastructure</Link></li>
+          <li><Link to="/cloud-infrastructure">Cloud Infrastructure</Link></li>
           <li><Link to="/solutions">IaaS Solutions</Link></li>
           <li><Link to="/cybersecurity">Cybersecurity</Link></li>
           <li><Link to="/company">Company</Link></li>
@@ -57,7 +57,7 @@ function MegaMenu() {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="lg:hidden bg-[#0D2440] rounded-lg py-4  mt-2 space-y-4 text-sm text-left px-6 text-white border border-[#FFFFFF0D]">
-          <li><Link to="/orm" onClick={() => setIsOpen(false)}> Cloud Infrastructure</Link></li>
+          <li><Link to="/cloud-infrastructure" onClick={() => setIsOpen(false)}> Cloud Infrastructure</Link></li>
           <li><Link to="/solutions" onClick={() => setIsOpen(false)}>IaaS Solutions</Link></li>
           <li><Link to="/cybersecurity" onClick={() => setIsOpen(false)}>Cybersecurity</Link></li>
           <li><Link to="/company" onClick={() => setIsOpen(false)}>Company</Link></li>
