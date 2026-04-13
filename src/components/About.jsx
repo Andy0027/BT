@@ -41,17 +41,13 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-[#0D2440] px-8 md:px-16  lg:px-32 py-16">
+    <div className="bg-blue-light-3 px-8 md:px-16  lg:px-32 py-16">
       <div className="flex flex-col gap-8">
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row gap-6 text-white">
+        <div className="flex flex-col lg:flex-row gap-6 text-navy-main">
           <div className="w-full lg:w-1/2">
-            <h2
-              className="text-2xl sm:text-3xl font-bold"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              More Than a Provider —
+            <h2 className="text-2xl text-blue-primary py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
+              Future-Ready Technology Architecture
             </h2>
             <h3
               className="text-lg sm:text-2xl pt-4"
@@ -63,7 +59,7 @@ const About = () => {
           </div>
           <div className="w-full lg:w-1/2">
             <p
-              className="text-sm sm:text-base text-[#94949e] leading-relaxed"
+              className="text-sm sm:text-base text-[#4B5563] leading-relaxed"
               data-aos="fade-up"
               data-aos-duration="1200"
             >
@@ -111,7 +107,7 @@ const About = () => {
                   </div>
                   <h2
                     className={`text-base sm:text-lg ${
-                      selected === item.id ? "text-white" : "text-[#A0A0A0]"
+                      selected === item.id ? "text-navy-main font-bold" : "text-[#64748B]"
                     }`}
                   >
                     {item.title}
@@ -133,48 +129,48 @@ const About = () => {
                   transition={{ duration: 0.4 }}
                   className="absolute w-full"
                 >
-                  <h2 className="text-white text-lg sm:text-xl md:text-2xl font-bold">
+                  <h2 className="text-navy-main text-lg sm:text-xl md:text-2xl font-bold">
                     {services.find((s) => s.id === selected)?.heading}
                   </h2>
-                  <p className="text-[#94949E] text-sm sm:text-base mt-4 leading-relaxed">
+                  <p className="text-[#4B5563] text-sm sm:text-base mt-4 leading-relaxed">
                     {services.find((s) => s.id === selected)?.description}
                   </p>
                   <div className="flex gap-6 mt-8">
                     {selected === 1 && (
                       <>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                         </svg>
                       </>
                     )}
                     {selected === 2 && (
                       <>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                         </svg>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
                         </svg>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                       </>
                     )}
                     {selected === 3 && (
                       <>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
-                        <svg className="w-8 h-8 md:w-10 md:h-10 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8 md:w-10 md:h-10 text-blue-primary opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                         </svg>
                       </>

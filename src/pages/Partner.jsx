@@ -21,7 +21,7 @@ function Partner() {
         {/* Hero Section */}
         <div className="w-full py-16 flex flex-col lg:flex-row gap-12 items-center relative z-40" data-aos="fade-up" data-aos-duration="600">
           <div className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#0D2440] leading-tight">
+            <h1 className="text-3xl sm:text-5xl font-semibold text-[#0D2440] leading-tight">
                Stronger Partnerships.<br />
                Smarter Growth.<br />
                Real Impact.
@@ -32,10 +32,10 @@ function Partner() {
               in a rapidly evolving digital landscape.
             </h3>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-               <Link to="/become-a-partner" className="px-8 py-4 bg-blue-primary text-white rounded-full font-bold shadow-lg hover:shadow-blue-primary/20 hover:-translate-y-1 transition-all duration-300">
+               <Link to="/become-a-partner" className="px-8 py-4 bg-blue-primary text-white rounded-full font-bold border border-blue-primary/50 shadow-lg shadow-blue-primary/20 hover:shadow-blue-primary/40 hover:-translate-y-1 transition-all duration-300">
                   Become a Partner
                </Link>
-                <Link to="/contact" className="px-8 py-4 border-2 border-blue-primary text-blue-primary rounded-full font-bold hover:bg-blue-primary/5 transition-all duration-300 text-center">
+                <Link to="/contact" className="px-8 py-4 border-2 border-blue-primary text-blue-primary rounded-full font-bold hover:bg-blue-primary hover:text-white hover:shadow-lg hover:shadow-blue-primary/20 transition-all duration-300 text-center">
                    Book a Demo
                 </Link>
             </div>
@@ -58,8 +58,8 @@ function Partner() {
               { count: "99.9%", label: "Reliability Commitment" },
             ].map((item, i) => (
               <li key={i} className="flex flex-col items-center flex-1 lg:border-r border-gray-100 last:border-r-0 px-4">
-                <span className="text-3xl md:text-5xl font-extrabold text-blue-primary mb-2">{item.count}</span>
-                <span className="text-gray-500 font-bold uppercase tracking-wider text-xs md:text-sm">{item.label}</span>
+                <span className="text-2xl md:text-4xl font-semibold text-blue-primary mb-2">{item.count}</span>
+                <span className="text-gray-500 font-semibold uppercase tracking-wider text-[10px] md:text-xs">{item.label}</span>
               </li>
             ))}
           </ul>
@@ -71,7 +71,7 @@ function Partner() {
             <h2 className="text-[#0D2440] font-bold uppercase tracking-widest text-sm mb-4" data-aos="fade-up">
               COLLABORATION MODEL
             </h2>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0D2440]" data-aos="fade-up" data-aos-duration="400">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[#0D2440]" data-aos="fade-up" data-aos-duration="400">
               Our Partnership Philosophy
             </h2>
             <p className="text-base sm:text-lg mt-6 text-gray-600 font-medium" data-aos="fade-up" data-aos-duration="500">
@@ -80,7 +80,7 @@ function Partner() {
           </div>
 
           <div className="lg:mt-9 px-0 w-full relative z-40">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-16 items-stretch">
               <SolutionsCard
                 title="Growth-Driven Partnerships"
                 para="We collaborate to unlock new revenue streams and scalable business opportunities."
@@ -141,7 +141,7 @@ function Partner() {
             <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-soft/5 rounded-full blur-[80px] pointer-events-none" />
 
             <div className="relative z-10 flex flex-col items-center text-center">
-              <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-12" data-aos="fade-up">
+              <h2 className="text-3xl md:text-5xl font-semibold text-white mb-12" data-aos="fade-up">
                 Why Partner with <span className="text-blue-soft">Brilliant Technologies?</span>
               </h2>
               
@@ -171,7 +171,7 @@ function Partner() {
               </div>
 
               <div className="mt-16" data-aos="fade-up" data-aos-delay="600">
-                <Link to="/become-a-partner" className="px-10 py-5 bg-white text-[#0D2440] rounded-full font-extrabold shadow-xl hover:-translate-y-1 hover:shadow-white/10 transition-all duration-300">
+                <Link to="/become-a-partner" className="px-10 py-5 bg-white text-[#0D2440] rounded-full font-bold shadow-xl hover:-translate-y-1 hover:shadow-white/10 transition-all duration-300">
                    Get Started Today
                 </Link>
               </div>

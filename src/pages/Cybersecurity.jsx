@@ -21,7 +21,7 @@ function Cybersecurity() {
 
       {/* Hero Section */}
       <div className="flex flex-col items-center relative z-40 w-full pt-10 text-center">
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-[#0D2440] max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
+        <h1 className="text-3xl sm:text-5xl font-semibold text-[#0D2440] max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
           Secure Your Digital Ecosystem with Confidence
         </h1>
         <p className="text-base sm:text-lg text-gray-600 mt-6 max-w-3xl leading-relaxed font-medium" data-aos="fade-up" data-aos-duration="1200">
@@ -39,7 +39,7 @@ function Cybersecurity() {
               </h3>
               <div className="mt-7">
                 <Link to="../contact">
-                  <button className="group flex items-center gap-2 text-white py-3 px-8 font-semibold bg-blue-primary hover:bg-[#1a3a5a] transition-all duration-300 shadow-xl hover:shadow-blue-primary/30 rounded-full transform hover:-translate-y-0.5">
+                  <button className="group flex items-center gap-2 text-white py-3 px-8 font-bold bg-blue-primary border border-blue-primary/50 shadow-xl shadow-blue-primary/20 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-2xl transition-all duration-300 rounded-full transform hover:-translate-y-1">
                     Secure Your Business
                     <HiArrowNarrowRight className="text-xl transition-transform group-hover:translate-x-1" />
                   </button>
@@ -56,11 +56,11 @@ function Cybersecurity() {
       {/* Zero Trust Section */}
       <div className="w-full flex flex-col lg:flex-row lg:mt-20 mt-10 gap-10 relative z-20">
         <div className="w-full lg:w-1/2 py-8">
-          <h2 className="text-base text-[#0D2440] font-bold uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">
+          <h2 className="text-base text-[#0D2440] font-semibold uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">
             ZERO-TRUST SECURITY
           </h2>
-          <h2 className="text-2xl text-[#0D2440] py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
-            Trust Nothing. Verify Everything.
+          <h2 className="text-2xl text-[#0D2440] py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
+            AI-Driven Threat Detection & Real-Time Monitoring
           </h2>
           <h3 className="text-base pr-4 text-gray-600" data-aos="fade-up" data-aos-duration="1400">
             Our zero-trust architecture ensures every user, device, and interaction is continuously verified—eliminating vulnerabilities before they can be exploited.
@@ -87,7 +87,7 @@ function Cybersecurity() {
                     <MdDone size={18} className="text-blue-primary" />
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-[#0D2440]">{item.title}</h2>
+                    <h2 className="text-lg font-semibold text-[#0D2440]">{item.title}</h2>
                     <p className="text-base text-gray-600 mt-1">{item.desc}</p>
                   </div>
                 </div>
@@ -111,11 +111,11 @@ function Cybersecurity() {
            </div>
         </div>
         <div className="w-full lg:w-1/2 lg:pl-12 py-8">
-          <h2 className="text-base text-[#0D2440] font-bold uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">
+          <h2 className="text-base text-[#0D2440] font-semibold uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">
             DATA SECURITY & RESILIENCE
           </h2>
-          <h2 className="text-2xl text-[#0D2440] py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
-            End-to-End Protection for Critical Data
+          <h2 className="text-2xl text-[#0D2440] py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
+            Enterprise Cloud Security Architecture
           </h2>
           <h3 className="text-base text-gray-600" data-aos="fade-up" data-aos-duration="1400">
             From encryption to recovery, we ensure your data remains protected, accessible, and compliant—no matter the threat landscape.
@@ -219,7 +219,7 @@ function Cybersecurity() {
               { label: "Compliance", value: "Enterprise-Grade" },
             ].map((stat, idx) => (
               <div key={idx} className="flex flex-col items-center justify-center p-4" data-aos="zoom-in" data-aos-delay={idx * 100}>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-blue-soft mb-2">{stat.value}</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-blue-soft mb-2">{stat.value}</h2>
                 <p className="text-gray-400 text-sm md:text-base font-medium uppercase tracking-wider">{stat.label}</p>
               </div>
             ))}

@@ -24,7 +24,7 @@ function MegaMenu() {
             <img 
               src={logo} 
               alt="Brilliant Technologies" 
-              className="h-10 md:h-12 w-auto object-contain scale-[2.5] md:scale-[3] origin-left"
+              className="h-8 sm:h-10 md:h-12 w-auto object-contain scale-[1.8] sm:scale-[2] md:scale-[2.5] origin-left"
             />
           </Link>
         </div>
@@ -48,7 +48,7 @@ function MegaMenu() {
         </ul>
 
         <Link to="/contact" className="hidden lg:block">
-          <button className="bg-blue-primary hover:bg-blue-soft text-white font-semibold py-2 px-6 rounded-lg transition-colors">
+          <button className="bg-blue-primary text-white font-bold py-2.5 px-8 rounded-full border border-blue-primary/50 shadow-lg shadow-blue-primary/10 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
             Contact Us
           </button>
         </Link>
@@ -65,7 +65,7 @@ function MegaMenu() {
           <li><Link to="/resources" onClick={() => setIsOpen(false)}>Resources</Link></li>
           <li>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
-              <button className="bg-blue-primary hover:bg-blue-soft text-white font-bold py-2 px-6 rounded-full w-full transition-colors">
+              <button className="bg-blue-primary text-white font-bold py-3 px-6 rounded-full w-full border border-blue-primary/50 shadow-lg hover:bg-white hover:text-blue-primary hover:border-white transition-all duration-300">
                 Contact Us
               </button>
             </Link>

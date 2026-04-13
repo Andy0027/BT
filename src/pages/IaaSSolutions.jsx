@@ -1,7 +1,7 @@
 import React from "react";
-import desk from "../assets/images/a-professional-system-visualization-show_6AIOXRY2RxKYo2U2IGLkqQ_mkwmc8LVTlua_vdEYX-a0g_cover_sd.jpeg";
-import cloudOpt from "../assets/images/CloudOptimization.png";
-import highAvail from "../assets/images/HighAvailability.png";
+import desk from "../assets/images/system-visualization.jpeg";
+import cloudOpt from "../assets/images/dashboard-interface.jpeg";
+import highAvail from "../assets/images/cpu-usage.jpeg";
 import { MdDone } from "react-icons/md";
 import SolutionsCard from "../components/cards/SolutionsCard";
 import IaaSFAQ from "../components/IaaSFAQ";
@@ -25,7 +25,7 @@ function IaaSSolutions() {
           </div>
 
           <div className="flex flex-col  items-center relative z-40 w-full pt-10 text-center">
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-[#0D2440] max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
+            <h1 className="text-3xl sm:text-5xl font-semibold text-[#0D2440] max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
               Scalable Cloud Infrastructure Built for Performance
             </h1>
             <p className="text-base sm:text-lg text-gray-600 mt-6 max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-duration="1200">
@@ -43,7 +43,7 @@ function IaaSSolutions() {
                   </h3>
                   <div className="mt-7">
                     <Link to="../contact">
-                      <button className="group flex items-center gap-2 text-white py-3 px-8 font-semibold bg-blue-primary hover:bg-[#1a3a5a] transition-all duration-300 shadow-xl hover:shadow-blue-primary/30 rounded-full transform hover:-translate-y-0.5">
+                      <button className="group flex items-center gap-2 text-white py-3 px-8 font-bold bg-blue-primary border border-blue-primary/50 shadow-xl shadow-blue-primary/20 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-2xl transition-all duration-300 rounded-full transform hover:-translate-y-1">
                         Get Started Today
                         <HiArrowNarrowRight className="text-xl transition-transform group-hover:translate-x-1" />
                       </button>
@@ -95,21 +95,21 @@ function IaaSSolutions() {
               </ul>
             </div>
 
-            <div className="w-full lg:w-1/2 flex items-center justify-center" data-aos="fade-up" data-aos-duration="1300">
-              <img src={cloudOpt} alt="Cloud Optimization" className="w-full h-auto rounded-xl shadow-2xl border border-gray-100" />
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 lg:p-8" data-aos="fade-up" data-aos-duration="1300">
+              <img src={cloudOpt} alt="Cloud Optimization" className="w-full h-auto max-w-sm lg:max-w-md rounded-xl shadow-2xl border border-gray-100" />
             </div>
           </div>
 
           {/* Section 3 */}
           <div className="w-full flex flex-col-reverse lg:flex-row mt-4 lg:mt-32 gap-20 relative z-20">
-            <div className="w-full lg:w-1/2 flex items-center justify-center" data-aos="fade-up" data-aos-duration="1300">
-              <img src={highAvail} alt="High Availability" className="w-full h-auto rounded-xl shadow-2xl border border-gray-100" />
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 lg:p-8" data-aos="fade-up" data-aos-duration="1300">
+              <img src={highAvail} alt="High Availability" className="w-full h-auto max-w-sm lg:max-w-md rounded-xl shadow-2xl border border-gray-100" />
             </div>
 
             <div className="w-full lg:w-1/2 pl-0 lg:pl-12 py-8">
               <h2 className="text-base text-[#0D2440] uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">SEAMLESS OPERATIONS, ALWAYS</h2>
-              <h2 className="text-2xl text-[#0D2440] py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
-                Manage Infrastructure Without Complexity
+              <h2 className="text-2xl text-[#0D2440] py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
+                Highly Scalable Compute Solutions
               </h2>
               <h3 className="text-base text-gray-600" data-aos="fade-up" data-aos-duration="1400">
                 Our intuitive cloud management tools simplify deployment, monitoring, and scaling—so your team can focus on growth, not maintenance.
@@ -146,8 +146,8 @@ function IaaSSolutions() {
         {/* Grid section */}
         <section>
           <div className="w-full flex flex-col items-center relative z-40 mt-14 lg:mt-32">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0D2440] leading-tight text-center px-4 sm:px-8" data-aos="fade-up" data-aos-duration="1300">
-              Robust Infrastructure Designed for Every Need
+            <h2 className="text-2xl sm:text-3xl font-semibold text-[#0D2440] leading-tight text-center px-4 sm:px-8" data-aos="fade-up" data-aos-duration="1300">
+              Build and scale with confidence using our advanced<br className="hidden sm:block" /> Enterprise Cloud Services
             </h2>
             <h3 className="text-base sm:text-lg text-center leading-6 pt-7 text-gray-600" data-aos="fade-up" data-aos-duration="1400">
               Power your applications with reliable, scalable, and secure infrastructure services.

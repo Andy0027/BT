@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import aboutimg from "../assets/images/a-sleek-product-photography-scene-featur_6a2DkATDS_6tlV3NDPcr7A_7nUo4Cs5QKi1GvWBTT2iNA_cover_sd.jpeg";
+import aboutimg from "../assets/images/sleek-product.jpeg";
 import SquareCard from "../components/cards/SquareCard";
 import Newsletter from "../components/Newsletter";
 import companybannner from "../assets/images/companybanner.png";
@@ -51,7 +51,7 @@ const Company = () => {
 
         <div className="flex flex-col items-center h-full relative z-40 pt-10 text-center">
           <h1
-            className="text-3xl sm:text-5xl font-extrabold text-[#0D2440] max-w-4xl"
+            className="text-3xl sm:text-5xl font-semibold text-[#0D2440] max-w-4xl"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -70,7 +70,7 @@ const Company = () => {
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 p-6 sm:p-10 lg:p-16">
               <div className="w-full lg:w-1/2">
                 <h2 className="text-base text-[#0D2440] font-bold uppercase tracking-wide">WHO WE ARE</h2>
-                <h2 className="text-3xl sm:text-4xl py-7 font-bold text-[#0D2440] leading-tight">
+                <h2 className="text-3xl sm:text-4xl py-7 font-semibold text-[#0D2440] leading-tight">
                   Built on Innovation<br />
                   Focused on People<br />
                   Designed for the Future
@@ -98,7 +98,7 @@ const Company = () => {
                     ))}
                   </div>
                   <div className="mt-8">
-                    <h2 className="text-2xl font-bold text-[#0D2440] mb-4">
+                    <h2 className="text-2xl font-semibold text-[#0D2440] mb-4">
                       {aboutdata.find((s) => s.id === selected)?.heading}
                     </h2>
                     <div className="text-base text-gray-600 leading-relaxed font-medium">
@@ -129,7 +129,7 @@ const Company = () => {
                 { count: "10x", label: "Scalable Solutions Delivered" },
               ].map((item, i) => (
                 <li key={i} className="flex flex-col items-center">
-                  <span className="text-4xl md:text-5xl font-extrabold text-blue-primary mb-2">{item.count}</span>
+                  <span className="text-4xl md:text-5xl font-bold text-blue-primary mb-2">{item.count}</span>
                   <span className="text-gray-500 font-bold uppercase tracking-wider text-sm">{item.label}</span>
                 </li>
               ))}
@@ -142,7 +142,7 @@ const Company = () => {
             <h2 className="text-[#0D2440] font-bold uppercase tracking-widest text-sm" data-aos="fade-up" data-aos-duration="800">
               WHAT WE DO
             </h2>
-            <h2 className="text-3xl sm:text-4xl py-6 font-bold text-[#0D2440]" data-aos="fade-up" data-aos-duration="900">
+            <h2 className="text-3xl sm:text-4xl py-6 font-semibold text-[#0D2440]" data-aos="fade-up" data-aos-duration="900">
               Enabling Growth at Every Stage
             </h2>
             <h3 className="text-gray-600 text-base leading-relaxed font-medium mb-10" data-aos="fade-up" data-aos-duration="1000">
@@ -209,7 +209,7 @@ const Company = () => {
                 <h2 className="text-blue-soft font-bold uppercase tracking-[0.3em] text-sm mb-4" data-aos="fade-up">
                   TRUST & EXPERTISE
                 </h2>
-                <h2 className="text-3xl md:text-5xl font-extrabold text-white" data-aos="fade-up" data-aos-delay="100">
+                <h2 className="text-3xl md:text-5xl font-bold text-white" data-aos="fade-up" data-aos-delay="100">
                   Why Businesses Trust Us
                 </h2>
               </div>

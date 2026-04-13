@@ -19,7 +19,7 @@ import { GradientChart } from "../chart/GradientChart";
 import { LineChart } from "../chart/LineChart";
 import SoftwareSolution from "../components/SoftwareSolution";
 import Newsletter from "../components/Newsletter";
-import db from "../assets/images/Futuristic cloud management dashboard display.png";
+import db from "../assets/images/Brilliant-Technologies-cloud-dashboard.jpeg";
 import hero from "../assets/images/bg.jpg";
 import Switchbutton from "../components/SwitchButton";
 import Cybersecurity from "../components/CyberSecurity";
@@ -27,8 +27,7 @@ import Testimonial from "../components/Testimonial";
 import CTA from "../components/CTA";
 import { Link } from "react-router-dom";
 
-// ..
-AOS.init();
+import HeroInfraVisual from "../components/HeroInfraVisual";
 
 function Home() {
   AOS.init();
@@ -52,38 +51,36 @@ function Home() {
     anchorPlacement: "top-bottom",
   });
 
-  
-
   const handleDone = () => {
     console.log(`Done after 5 loops!`);
   };
 
   return (
     <main>
-    {/* <div>
-      <ContainerScroll titleComponent={<h1 className="text-4xl font-bold">Your Title Here</h1>}>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rf6eeEPP1jJiQzkINQJKYr7cFLRm9LSWhw&s" alt="Description" className="w-full h-auto" />
-      </ContainerScroll>
-    </div> */}
-
         {/* video */}
-        <section className="bg-navy-main relative h-[100vh] overflow-hidden">
+        <section className="bg-navy-main relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 z-0">
         <CloudNetworkBackground />
       </div>
 
-      <div className={`${style.video_bg} relative z-10 flex flex-col justify-between items-center h-screen text-center px-4 pt-28 gap-[105px] pb-10 `}>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl pt-12" style={{fontWeight: 500, color: "rgb(188, 186, 186)"}} >
-          Power Your <span className="text-blue-primary">Infrastructure</span> with <br className="hidden sm:block" /> Reliable Cloud Solutions
-        </h2>
+      <div className={`${style.video_bg} relative z-10 flex flex-col justify-center items-center h-screen text-center px-4 pt-16 pb-16 gap-12`}>
+        <div data-aos="fade-down" data-aos-duration="1000">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{fontWeight: 500, color: "rgb(220, 220, 225)"}} >
+            Power Your <span className="text-blue-primary">Infrastructure</span> with <br className="hidden sm:block" /> Reliable Cloud Solutions
+          </h2>
+        </div>
 
-        <div className="">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-tight font-semibold">
+        <div className="w-full max-w-2xl" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+          <HeroInfraVisual />
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-tight font-bold mb-8">
             Deploy Faster, <span className="text-blue-primary">Scale Smarter</span><br className="hidden sm:block" />
             Stay Secure with <span className="text-blue-primary">Enterprise Cloud</span>
           </h2>
          <Link to="contact">
-         <button className="text-base sm:text-lg md:text-xl rounded-md text-white mt-6 border-2 border-blue-primary px-6 py-2 hover:bg-blue-primary hover:shadow-[0_0_15px_rgba(46,94,153,0.5)] transition-all duration-300">
+          <button className="text-base sm:text-lg md:text-xl rounded-full text-white border border-white/20 bg-blue-primary/10 backdrop-blur-sm px-8 py-3 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-2xl transition-all duration-300 font-bold tracking-wide">
             Get Started
           </button>
          </Link>
@@ -92,16 +89,16 @@ function Home() {
     </section>
 
 
-    <section className={style.hero_section}>
-      <div className={style.hero_bg}>
-        <img src={hero} className="w-full object-cover h-auto" />
-
-        <div className="absolute top-24 md:top-36 left-0 w-full px-4 sm:px-16 lg:px-32 text-white">
-          <div className="flex flex-col lg:flex-row lg:gap-8">
+    <section className="relative overflow-hidden bg-navy-main pt-20 md:pt-0">
+      <div className="relative w-full h-auto min-h-[500px] md:min-h-[600px] flex items-center">
+        <img src={hero} className="absolute inset-0 w-full h-full object-cover opacity-50 md:opacity-100" />
+        
+        <div className="relative z-10 w-full px-6 sm:px-16 lg:px-32 text-white py-20 md:py-0">
+          <div className="flex flex-col lg:flex-row lg:gap-12 items-center lg:items-start text-center lg:text-left">
             {/* Left Side */}
-            <div className="w-full md:full lg:w-3/4">
+            <div className="w-full lg:w-3/5">
               <h1
-                className="text-3xl sm:text-4xl md:text-5xl pt-5 leading-relaxed md:leading-tight font-bold"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6"
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
@@ -110,21 +107,21 @@ function Home() {
             </div>
 
             {/* Right Side */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-between lg:pl-16">
+            <div className="w-full lg:w-2/5 flex flex-col justify-center lg:pt-10">
               <h2
-                className="text-sm sm:text-base md:text-lg text-[#c9c9d2]"
+                className="text-base sm:text-lg md:text-xl text-gray-300 mb-10"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
                 Monitor, manage, and scale your infrastructure in real-time with powerful and intuitive dashboards.
               </h2>
               <div
-                className="mt-6 md:mt-10"
+                className="flex justify-center lg:justify-start"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
-               <Link to="contact">
-               <button className="bg-white text-[#0D2440] px-6 py-3 rounded-md w-full sm:w-fit font-semibold hover:bg-blue-subtle transition-colors">
+               <Link to="contact" className="w-full sm:w-fit">
+                <button className="bg-white text-[#0D2440] px-10 py-4 rounded-full w-full font-bold border border-white/80 shadow-lg hover:shadow-2xl hover:bg-blue-primary hover:text-white hover:border-blue-primary transition-all duration-300 text-lg">
                   Launch Platform
                 </button>
                </Link>
@@ -150,9 +147,9 @@ function Home() {
       <div className={style.gradient}></div>
     </section>
     {/* your digital */}
-    <section className="bg-[#0D2440] py-20 md:py-28 px-4 sm:px-8 md:px-16 h-auto">
-      <div className="text-center text-[#F7F7F8]">
-        <h1 className="hidden md:block font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight">
+    <section className="bg-blue-light-1 py-20 md:py-28 px-4 sm:px-8 md:px-16 h-auto">
+      <div className="text-center text-navy-main">
+        <h1 className="hidden md:block font-semibold text-2xl sm:text-3xl lg:text-4xl leading-tight text-navy-main">
           Your Digital{" "}
           <span className="block sm:inline">
             <Typewriter
@@ -165,11 +162,11 @@ function Home() {
             />
           </span> <span className="block sm:inline">Is Your Asset</span>
         </h1>
-        <h1 className="block md:hidden font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight">
+        <h1 className="block md:hidden font-semibold text-2xl sm:text-3xl lg:text-4xl leading-tight text-navy-main">
           Your Digital Presence Is Your Asset
         </h1>
         <p
-          className="text-[#94949e] text-sm sm:text-md md:text-lg lg:text-xl pt-6 md:pt-10 font-semibold max-w-2xl mx-auto"
+          className="text-[#4B5563] text-sm sm:text-md md:text-lg lg:text-xl pt-6 md:pt-10 font-medium max-w-2xl mx-auto"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -206,7 +203,7 @@ function Home() {
       </div>
 
       <div className="pt-14 flex flex-col items-center overflow-hidden">
-        <h2 className="text-[#94949e] text-sm sm:text-base font-semibold mb-6 uppercase tracking-[0.2em]" data-aos="fade-up">
+        <h2 className="text-[#94949e] text-sm sm:text-base font-medium mb-6 uppercase tracking-[0.2em]" data-aos="fade-up">
           Trusted Cloud Technologies
         </h2>
         <div className={`${style.marqueeBg} w-full pt-4`}>
@@ -223,7 +220,7 @@ function Home() {
                       alt={item.name}
                       className="w-8 sm:w-10 transition-all duration-300"
                     />
-                    <h2 className="text-sm sm:text-lg px-2 font-semibold transition-all duration-300 text-[#94949e]">
+                    <h2 className="text-sm sm:text-lg px-2 font-semibold transition-all duration-300 text-[#64748B]">
                       {item.name}
                     </h2>
                   </div>
@@ -241,17 +238,17 @@ function Home() {
 
 
     {/* Infrastructure Capabilities */}
-    <section className=" z-50  relative" style={{backgroundImage: "linear-gradient(180deg, #0D2440 0%, #2E5E99, #E7F0FA 100%)"}}>
+    <section className=" z-50  relative" style={{backgroundImage: "linear-gradient(180deg, #F1F7FE 0%, #E7F0FA 100%)"}}>
       <div className="text-center px-8 sm:px-6 md:px-10 lg:px-32">
         <h1
-          className="font-bold text-2xl sm:text-3xl lg:text-5xl text-[#fff]"
+          className="font-medium text-2xl sm:text-3xl lg:text-5xl text-navy-main"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           Infrastructure Capabilities
         </h1>
         <p
-          className="text-[#fff] text-base sm:text-lg font-normal pt-6 sm:pt-8 lg:py-4 lg:px-32"
+          className="text-[#4B5563] text-base sm:text-lg font-normal pt-6 sm:pt-8 lg:py-4 lg:px-32"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -312,7 +309,7 @@ function Home() {
     </section>
 
 
-    <section  className="hidden lg:block">
+    <section className="px-6 sm:px-10 lg:px-32 py-10">
       <CTA />
     </section>
     <section>

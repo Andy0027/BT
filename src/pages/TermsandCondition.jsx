@@ -7,25 +7,25 @@ import { Link } from "react-router-dom";
 function TermsAndUse() {
   return (
     <>
-      <div className="min-h-screen bg-navy-main bg-scroll py-24 lg:py-12 lg:px-10  text-white  ">
+      <div className="min-h-screen bg-navy-main bg-scroll py-12 px-6 sm:px-12 lg:px-32 text-white overflow-hidden">
         {/* Radial gradient background effect */}
-        <div>
-          <div className="absolute inset-0 flex justify-center">
-            <div className="w-[800px] h-[800px] bg-gradient-radial from-blue-primary/40 via-navy-main to-navy-main rounded-full blur-3xl opacity-60" />
+        <div className="relative">
+          <div className="absolute inset-0 flex justify-center -top-20">
+            <div className="w-[800px] h-[800px] bg-gradient-radial from-blue-primary/30 via-navy-main to-navy-main rounded-full blur-3xl opacity-60" />
           </div>
-          <div className="lg:w-full  flex flex-col relative z-40 px-8 lg:pt-28 lg:px-48">
+          <div className="flex flex-col relative z-40 pt-24 lg:pt-32 max-w-5xl mx-auto">
               <div className="flex justify-center text-center">
                 <h2 className="mb-5  text-center md:text-5xl text-3xl font-medium text-white">
                  Terms and Conditions
                 </h2>
               </div>
-              <div className="text-lg font-medium mt-5 tracking-tight mb-5 text-white lg:px-20">
-                Brilliant Technologies ("Company," "we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you visit our website<a href="www.brillianttechnologies.com">(www.brillianttechnologies.com)</a> or use our services (collectively, the "Services").
+              <div className="text-base sm:text-lg font-medium mt-8 tracking-tight mb-8 text-gray-300">
+                Brilliant Technologies ("Company," "we," "us," or "our") is dedicated to providing high-quality services while ensuring transparency in our operations. These Terms and Conditions outline the rules and regulations for the use of our website <a href="https://www.brilliantweb.us" className="text-blue-primary underline">(www.brilliantweb.us)</a> and all related services.
               </div>
-              <div className="text-md lg:text-xl font-normal tracking-tight mb-5 text-white lg:px-20 ">
-                By using our Services, you agree to the terms of this Privacy Policy. If you do not agree, please do not use our Services.
+              <div className="text-sm sm:text-lg font-normal tracking-tight mb-5 text-gray-400">
+                By using our Services, you agree to these Terms and Conditions. If you do not agree, please do not use our Services.
                 <div className=" mt-10">
-                  <button className="text-xl rounded-lg  px-4 py-2 hover:bg-blue-soft hover:text-white border-2 border-blue-primary transition-colors">
+                  <button className="text-lg rounded-full px-8 py-3 bg-blue-primary text-white border border-blue-primary/50 shadow-lg shadow-blue-primary/20 hover:bg-blue-soft hover:shadow-blue-primary/40 hover:-translate-y-1 transition-all duration-300 font-bold">
                     Get Started
                   </button>
                 </div>
@@ -34,8 +34,8 @@ function TermsAndUse() {
         </div>
 
 
-        <div className="lg:w-full flex px-10 lg:px-48 py-12 flex-col relative z-50">
-          <div className="lg:mx-16">
+        <div className="max-w-5xl mx-auto py-12 relative z-40">
+          <div className="lg:mx-0">
             <ul>
               <li className="mb-10">
                 <h1 className="text-lg lg:text-2xl text-[white] font-bold ">

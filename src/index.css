@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @font-face {
-    font-family:Instrument Bold ;
-    src: url('./assets/fonts/InstrumentSans-Bold.ttf');
+    font-family: Instrument Regular;
+    src: url('./assets/fonts/InstrumentSans-Regular.ttf');
 }
 @font-face {
-    font-family:Instrument Medium ;
+    font-family: Instrument Medium;
     src: url('./assets/fonts/InstrumentSans-Medium.ttf');
 }
-
-h1{
+@font-face {
     font-family: Instrument Bold;
+    src: url('./assets/fonts/InstrumentSans-Bold.ttf');
+}
+
+h1 {
+    font-family: Instrument Medium;
+    font-weight: 500;
+}
+
+h2, h3, h4 {
+    font-family: Instrument Regular;
 }
 
 p{
@@ -33,11 +42,11 @@ p{
 }
 
 .companysado{
-    background: linear-gradient( #0D2440 , #0D2440);
+    background: linear-gradient( #122d4d , #122d4d);
    }
 
    .company_bg{
-    background: linear-gradient(180deg, rgba(13, 36, 64, 0) 0%, rgb(13, 36, 64), rgb(13, 36, 64)) 51.80180180180181%;
+    background: linear-gradient(180deg, rgba(18, 45, 77, 0) 0%, rgb(18, 45, 77), rgb(18, 45, 77)) 51.80180180180181%;
    }
 
 
@@ -47,7 +56,7 @@ p{
 }
 
 .software_bg{
-    background-image:linear-gradient(180deg, #E7F0FA 0%,#E7F0FA 50%, #0D2440 100%);
+    background-image:linear-gradient(180deg, #E7F0FA 0%,#E7F0FA 50%, #DEEBF7 100%);
 }
  
 
@@ -78,6 +87,6 @@ p{
 
 
 
-.text-white{
-    color: rgb(217, 214, 214) !important;
+.text-white {
+    color: rgb(217, 214, 214);
 }

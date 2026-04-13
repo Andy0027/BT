@@ -18,7 +18,7 @@ function SoftwareFAQ() {
       {/* Left Side - Heading */}
       <div className="w-full lg:w-1/2">
         <h2 className="text-base text-blue-soft">FAQs</h2>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl pr-0 md:pr-8 leading-tight font-bold py-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl pr-0 md:pr-8 leading-tight font-semibold py-4">
           Got a question? Get your answer
         </h2>
         <h3 className="text-base leading-7 text-[#94949e]">

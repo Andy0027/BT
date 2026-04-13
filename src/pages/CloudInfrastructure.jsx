@@ -1,7 +1,7 @@
 import React from "react";
-import desk from "../assets/images/a-sleek-ai-software-interface-displayed-_VMSgjMN6S0yw6N5AlGwejg_4FPdo5GcQDyuW-iLCeedkA_sd.jpeg";
-import cloudOpt from "../assets/images/CloudOptimization.png";
-import highAvail from "../assets/images/HighAvailability.png";
+import desk from "../assets/images/software-interface.jpeg";
+import cloudOpt from "../assets/images/overview.jpeg";
+import highAvail from "../assets/images/cloud-infrastructure.jpeg";
 import { MdDone } from "react-icons/md";
 import SolutionsCard from "../components/cards/SolutionsCard";
 import CloudFAQ from "../components/CloudFAQ";
@@ -29,13 +29,13 @@ function CloudInfrastructure() {
               <div className="flex flex-col p-6 sm:p-10 lg:flex-row lg:items-center gap-10 lg:gap-20  lg:p-16">
                 <div className="w-full sm:w-full  lg:w-1/2 h-full" data-aos="fade-up" data-aos-duration="800">
                   <h2 className="text-base text-[#0D2440] uppercase tracking-wide">CLOUD INFRASTRUCTURE</h2>
-                  <h2 className="text-3xl sm:text-4xl py-7 font-bold text-[#0D2440]">Cloud Infrastructure Built for Performance &amp; Scale</h2>
+                  <h2 className="text-3xl sm:text-4xl py-7 font-medium text-[#0D2440]">Cloud Infrastructure Built for Performance &amp; Scale</h2>
                   <h3 className="text-base text-gray-600">
                     Empower your business with secure, scalable, and high-performance cloud infrastructure designed to handle modern workloads effortlessly.
                   </h3>
                   <div className="mt-7">
                     <Link to="../contact">
-                      <button className="group flex items-center gap-2 text-white py-3 px-8 font-semibold bg-blue-primary hover:bg-[#1a3a5a] transition-all duration-300 shadow-xl hover:shadow-blue-primary/30 rounded-full transform hover:-translate-y-0.5">
+                      <button className="group flex items-center gap-2 text-white py-3 px-8 font-bold bg-blue-primary border border-blue-primary/50 shadow-xl shadow-blue-primary/20 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-2xl transition-all duration-300 rounded-full transform hover:-translate-y-1">
                         Get Started Today
                         <HiArrowNarrowRight className="text-xl transition-transform group-hover:translate-x-1" />
                       </button>
@@ -53,7 +53,7 @@ function CloudInfrastructure() {
           <div className="w-full flex flex-col lg:flex-row lg:mt-20 mt-7 gap-10 relative z-20">
             <div className="w-full lg:w-1/2 py-8">
               <h2 className="text-base text-[#0D2440] uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">INFRASTRUCTURE OPTIMIZATION</h2>
-              <h2 className="text-2xl text-[#0D2440] py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
+              <h2 className="text-2xl text-[#0D2440] py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
                 Optimize Resource Utilization & Maximize Efficiency
               </h2>
               <h3 className="text-base text-gray-600" data-aos="fade-up" data-aos-duration="1400">
@@ -91,7 +91,7 @@ function CloudInfrastructure() {
 
             <div className="w-full lg:w-1/2 pl-0 lg:pl-12 py-8">
               <h2 className="text-base text-[#0D2440] uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">HIGH AVAILABILITY</h2>
-              <h2 className="text-2xl text-[#0D2440] py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
+              <h2 className="text-2xl text-[#0D2440] py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
                 Ensure Maximum Uptime Across All Systems
               </h2>
               <h3 className="text-base text-gray-600" data-aos="fade-up" data-aos-duration="1400">
@@ -127,7 +127,7 @@ function CloudInfrastructure() {
         {/* Grid section */}
         <section>
           <div className="w-full flex flex-col items-center relative z-40 mt-14 lg:mt-32">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0D2440] leading-tight text-center px-4 sm:px-8" data-aos="fade-up" data-aos-duration="1300">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-[#0D2440] leading-tight text-center px-4 sm:px-8" data-aos="fade-up" data-aos-duration="1300">
               Build and scale with confidence using our advanced<br className="hidden sm:block" /> Enterprise Cloud Services
             </h2>
             <h3 className="text-base sm:text-lg text-center leading-6 pt-7 text-gray-600" data-aos="fade-up" data-aos-duration="1400">

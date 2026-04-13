@@ -11,12 +11,15 @@ import cloud from "../assets/images/cloud.png";
 AOS.init();
 
 const ServiceCard = ({ icon, title, description }) => (
-  <div className="bg-[#E7F0FA] shadow-md rounded-xl py-6 px-5 sm:py-8 sm:px-7 flex flex-col items-start border border-[#2E5E991A] hover:border-[#2E5E994D] transition-all duration-300">
-    <div className="text-blue-primary p-2 text-4xl mb-4 shadow-lg rounded-xl bg-white/50 border border-blue-primary/20">
-      <img src={icon} width={25} />
+  <div className="h-full bg-[#E7F0FA] group rounded-2xl py-8 px-7 flex flex-col items-start border border-navy-main/25 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(13,36,64,0.1)] transition-all duration-500 relative overflow-hidden">
+    <div className="absolute top-0 right-0 w-24 h-24 bg-blue-primary/5 rounded-full blur-2xl -z-0 group-hover:bg-blue-primary/10 transition-colors duration-500"></div>
+    <div className="text-blue-primary p-3 mb-6 shadow-md rounded-xl bg-white border border-blue-primary/10 transform group-hover:scale-110 transition-transform duration-500">
+      <img src={icon} width={28} className="relative z-10" />
     </div>
-    <h3 className="text-lg sm:text-xl font-bold mb-2 text-navy-main">{title}</h3>
-    <p className="text-[#4A4A52] font-medium text-sm sm:text-base leading-relaxed pr-4">{description}</p>
+    <div className="flex-1">
+      <h3 className="text-xl font-bold mb-3 text-navy-main tracking-tight relative z-10">{title}</h3>
+      <p className="text-[#4B5563] font-medium text-base leading-relaxed pr-2 relative z-10">{description}</p>
+    </div>
   </div>
 );
 
@@ -44,7 +47,7 @@ const SoftwareSolution = () => {
       <div data-aos="fade-up" data-aos-duration="3000">
         <div className="flex flex-col items-center text-center">
           <h2
-            className="text-navy-main text-2xl sm:text-4xl font-bold pt-3 pb-3"
+            className="text-navy-main text-2xl sm:text-4xl font-semibold pt-3 pb-3"
             data-aos="fade-up"
             data-aos-duration="800"
           >
@@ -69,43 +72,43 @@ const SoftwareSolution = () => {
       </div>
 
       <div>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-7">
-          <div data-aos="fade-up" data-aos-duration="1000">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-7 items-stretch">
+          <div className="h-full" data-aos="fade-up" data-aos-duration="1000">
             <ServiceCard
               icon={cloud}
               title="Virtual Servers"
               description="High-performance compute instances with flexible configurations and on-demand scalability."
             />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1200">
+          <div className="h-full" data-aos="fade-up" data-aos-duration="1200">
             <ServiceCard
               icon={sw}
               title="Container Deployment"
               description="Seamless Kubernetes and Docker orchestration to simplify your application lifecycle."
             />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1400">
+          <div className="h-full" data-aos="fade-up" data-aos-duration="1400">
             <ServiceCard
               icon={ss}
               title="System Optimization"
               description="Continuous performance tuning and resource management to keep your infrastructure running lean."
             />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1600">
+          <div className="h-full" data-aos="fade-up" data-aos-duration="1600">
             <ServiceCard
               icon={app}
               title="DevOps Support"
               description="Expert guidance and automated tools to accelerate your development and deployment pipelines."
             />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1800">
+          <div className="h-full" data-aos="fade-up" data-aos-duration="1800">
             <ServiceCard
               icon={api}
               title="API Hosting"
               description="Optimized environments for modern APIs, ensuring low latency and high reliability."
             />
           </div>
-          <div data-aos="fade-up" data-aos-duration="2000">
+          <div className="h-full" data-aos="fade-up" data-aos-duration="2000">
             <ServiceCard
               icon={softwaresecurity}
               title="Database Management"

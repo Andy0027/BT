@@ -20,10 +20,10 @@ function Resources() {
            <span className="px-4 py-2 bg-blue-primary/10 text-blue-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-blue-primary/20">
               Technical Knowledge Center
            </span>
-           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0D2440] leading-[1.1] max-w-4xl mx-auto">
-              Insights That Power Smarter <br className="hidden md:block" />
-              <span className="text-blue-primary">Technology Decisions</span>
-           </h1>
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-light text-[#0D2440] leading-[1.1] max-w-4xl mx-auto">
+               Insights That Power Smarter <br className="hidden md:block" />
+               <span className="text-blue-primary">Technology Decisions</span>
+            </h1>
            <p className="text-base sm:text-lg lg:text-xl text-gray-600 font-medium max-w-3xl mt-8 leading-relaxed">
               Explore our latest thinking on cloud infrastructure, cybersecurity, and scalable systems — 
               designed to help businesses build, optimize, and secure their digital future.
@@ -49,7 +49,7 @@ function Resources() {
                     <span className="w-2 h-2 rounded-full bg-blue-primary" />
                     <span className="text-xs font-bold text-blue-primary uppercase tracking-tighter">{item.date}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-[#0D2440] mb-4 group-hover:text-blue-primary transition-colors line-clamp-2">
+                  <h3 className="text-xl font-medium text-[#0D2440] mb-4 group-hover:text-blue-primary transition-colors line-clamp-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 text-sm font-medium leading-relaxed mb-6 line-clamp-3">
@@ -68,8 +68,8 @@ function Resources() {
              <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.1),transparent)] pointer-events-none" />
              <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
                 <div className="w-full lg:w-[40%] text-center lg:text-left">
-                   <h2 className="text-base font-bold text-blue-soft uppercase tracking-widest mb-4">Domain Authority</h2>
-                   <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">Our Expertise <br className="hidden md:block" /> Covers</h2>
+                   <h2 className="text-base font-medium text-blue-soft uppercase tracking-widest mb-4">Domain Authority</h2>
+                   <h2 className="text-3xl md:text-5xl font-medium text-white leading-tight">Our Expertise <br className="hidden md:block" /> Covers</h2>
                 </div>
                 <div className="w-full lg:w-[60%]">
                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
@@ -103,7 +103,7 @@ function Resources() {
                  <span className="px-4 py-1.5 bg-blue-primary/10 text-blue-primary rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block">
                     Spotlight Insight
                  </span>
-                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0D2440] leading-tight mb-8">
+                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#0D2440] leading-tight mb-8">
                     The Future of Cloud is <br />
                     <span className="text-blue-primary">Intelligent, Secure, and Scalable</span>
                  </h2>
@@ -112,7 +112,7 @@ function Resources() {
                    From intelligent scaling to real-time threat detection, the next generation 
                    of cloud solutions is built to be resilient, efficient, and secure by design.
                  </p>
-                 <Link to="/contact" className="px-10 py-5 bg-[#0D2440] text-white rounded-full font-bold shadow-xl hover:-translate-y-1 hover:shadow-blue-primary/20 transition-all duration-300 inline-block text-center">
+                 <Link to="/contact" className="px-10 py-5 bg-[#0D2440] text-white rounded-full font-bold border border-white/10 shadow-xl hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 inline-block text-center">
                     Book a Demo
                  </Link>
               </div>
@@ -122,7 +122,7 @@ function Resources() {
         {/* Section 4 - Quick Insights (Short Lines) */}
         <section className="relative z-40 py-20 lg:py-32">
             <div className="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
-              <h2 className="text-4xl font-bold text-[#0D2440]">Quick Insights</h2>
+              <h2 className="text-4xl font-medium text-[#0D2440]">Quick Insights</h2>
               <div className="w-24 h-1.5 bg-blue-primary mx-auto mt-6 rounded-full" />
            </div>
            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -137,7 +137,7 @@ function Resources() {
                    <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-blue-primary font-bold transition-all duration-300 group-hover:bg-blue-primary group-hover:text-white group-hover:-rotate-6">
                       0{idx + 1}
                    </div>
-                   <p className="text-xl text-[#0D2440] font-semibold leading-tight group-hover:text-blue-primary transition-colors pt-2">
+                   <p className="text-xl text-[#0D2440] font-medium leading-tight group-hover:text-blue-primary transition-colors pt-2">
                       {insight}
                    </p>
                 </div>

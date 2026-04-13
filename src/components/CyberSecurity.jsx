@@ -58,7 +58,7 @@ export default function Cybersecurity() {
   return (
     <div className="min-h-auto text-[#0D2440] flex flex-col px-6 sm:px-10 md:px-20 lg:px-32 items-center justify-center py-24 border-b border-[#2E5E9910] bg-[#E7F0FA]">
       <div className="flex flex-col items-center text-center">
-        <h2 className="text-[#0D2440] text-3xl md:text-4xl font-bold pt-3 pb-3">Enterprise-Grade Security for Your Infrastructure</h2>
+        <h2 className="text-[#0D2440] text-3xl md:text-4xl font-semibold pt-3 pb-3">Enterprise-Grade Security for Your Infrastructure</h2>
         <h2 className="text-xl md:text-2xl font-semibold text-[#2E5E99] pt-2">Advanced Protection for the Modern Cloud</h2>
         <p className="text-[#334155] text-base md:text-lg font-normal text-center pt-5 px-2 lf:px-32">Protect your systems with advanced security protocols and real-time threat monitoring.</p>
       </div>
@@ -130,16 +130,17 @@ export default function Cybersecurity() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8 mt-6 w-full">
-      <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] border border-[#2E5E9920] rounded-md" data-aos="fade-up" data-aos-duration="1300">
+      <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] group border border-navy-main/30 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(13,36,64,0.1)] relative overflow-hidden" data-aos="fade-up" data-aos-duration="1300">
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-primary/0 via-blue-primary/50 to-blue-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="py-5">
-            <h2 className="py-5 font-bold text-2xl text-[#0D2440]">Threat Detection & <span className="text-blue-primary">Prevention</span></h2>
+            <h2 className="py-5 font-semibold text-2xl text-[#0D2440]">Threat Detection & <span className="text-blue-primary">Prevention</span></h2>
             <h3 className="text-[#334155] text-base md:text-xl font-normal">Stay ahead of cyber threats with proactive monitoring and real-time defense.</h3>
           </div>
           <div className="h-[300px]">
-            <div className="bg-white/50 text-[#0D2440] p-6 rounded-xl border border-[#2E5E9910]">
+            <div className="bg-white text-[#0D2440] p-6 rounded-xl border border-navy-main/10 shadow-sm group-hover:shadow-md transition-shadow">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold">Identify threats:</h2>
-                <button className="bg-white text-[#0D2440] text-sm px-3 py-1 rounded-md border border-[#2E5E9920]">All time</button>
+                <button className="bg-white text-[#0D2440] text-sm px-4 py-1.5 rounded-full border border-[#2E5E9920] hover:border-blue-primary/40 transition-colors font-medium">All time</button>
               </div>
               {data.map((item, index) => (
                 <div key={index} className="mb-4">
@@ -156,13 +157,14 @@ export default function Cybersecurity() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] border border-[#2E5E9920] rounded-md" data-aos="fade-up" data-aos-duration="1300">
+        <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] group border border-navy-main/30 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(13,36,64,0.1)] relative overflow-hidden" data-aos="fade-up" data-aos-duration="1300">
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-primary/0 via-blue-primary/50 to-blue-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="py-5">
-            <h2 className="py-5 font-bold text-2xl text-[#0D2440]">Data Protection & <span className="text-blue-primary">Encryption</span></h2>
+            <h2 className="py-5 font-semibold text-2xl text-[#0D2440]">Data Protection & <span className="text-blue-primary">Encryption</span></h2>
             <h3 className="text-[#334155] text-base md:text-xl font-normal">Secure sensitive information with cutting-edge encryption and access control strategies</h3>
           </div>
           <div className="h-[300px]">
-            <div className="bg-white/50 p-4 rounded-xl shadow-sm border border-[#2E5E9910] w-full">
+            <div className="bg-white p-4 rounded-xl shadow-sm border border-navy-main/10 w-full group-hover:shadow-md transition-shadow">
               <div className="text-[#0D2440] text-lg font-semibold mb-2 text-center">Secure communication</div>
               <ResponsiveContainer width="100%" height={200}>
                 <LineChart data={data1}>
@@ -178,12 +180,13 @@ export default function Cybersecurity() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8 mt-6 w-full">
-        <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] border border-[#2E5E9920] rounded-md" data-aos="fade-up" data-aos-duration="1700">
+        <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] group border border-navy-main/30 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(13,36,64,0.1)] relative overflow-hidden" data-aos="fade-up" data-aos-duration="1700">
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-primary/0 via-blue-primary/50 to-blue-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="py-5">
-            <h2 className="py-5 font-bold text-2xl text-[#0D2440]">Backup & <span className="text-blue-primary">Disaster Recovery</span></h2>
+            <h2 className="py-5 font-semibold text-2xl text-[#0D2440]">Backup & <span className="text-blue-primary">Disaster Recovery</span></h2>
             <h3 className="text-[#334155] text-base md:text-xl font-normal">Ensure business continuity with automated backups and rapid failover recovery systems.</h3>
           </div>
-          <div className="lg:h-[240px] rounded-xl my-4 lg:mt-9 p-5 bg-white/50 border border-[#2E5E9910]">
+          <div className="lg:h-[240px] rounded-xl my-4 lg:mt-9 p-5 bg-white border border-navy-main/10 shadow-sm group-hover:shadow-md transition-shadow">
             <ResponsiveContainer width="100%" height={160}>
               <AreaChart data={backupData}>
                 <defs>
@@ -205,12 +208,13 @@ export default function Cybersecurity() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] border border-[#2E5E9920] rounded-md" data-aos="fade-up" data-aos-duration="1700">
+        <div className="w-full lg:w-1/2 px-6 md:px-10 bg-[#E7F0FA] group border border-navy-main/30 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(13,36,64,0.1)] relative overflow-hidden" data-aos="fade-up" data-aos-duration="1700">
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-primary/0 via-blue-primary/50 to-blue-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="py-5">
-            <h2 className="py-5 font-bold text-2xl text-[#0D2440]">Access Control & <span className="text-blue-primary">IAM</span></h2>
+            <h2 className="py-5 font-semibold text-2xl text-[#0D2440]">Access Control & <span className="text-blue-primary">IAM</span></h2>
             <h3 className="text-[#334155] text-base md:text-xl font-normal">Manage identities and enforce strict access policies with granular control.</h3>
           </div>
-          <div className="h-[240px] rounded-xl my-4 bg-white/50 border border-[#2E5E9910]">
+          <div className="h-[240px] rounded-xl my-4 bg-white border border-navy-main/10 shadow-sm group-hover:shadow-md transition-shadow">
             <div className="w-full p-4">
               <ResponsiveContainer width="100%" height={200}>
                 <LineChart data={data3}>

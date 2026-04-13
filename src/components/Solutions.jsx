@@ -15,7 +15,7 @@ const Solutions = () => {
           <div className="w-[1000px] h-[800px] bg-gradient-radial from-blue-primary/40 via-navy-main to-navy-main rounded-full blur-3xl opacity-90" />
         </div>
         <div className=" flex flex-col items-center   relative z-40 w-full pt-10">
-          <h2 className="text-white text-4xl py-4 font-bold text-center" data-aos="fade-up"
+          <h2 className="text-white text-4xl py-4 font-semibold text-center" data-aos="fade-up"
      data-aos-duration="300">
             Reputation Management Services for a Digital World
           </h2>
@@ -33,7 +33,7 @@ const Solutions = () => {
                 <h2 className="text-base text-blue-soft uppercase tracking-wide">
                   Increases Credibility
                 </h2>
-                <h2 className="text-4xl py-7 font-bold pr-0">
+                <h2 className="text-4xl py-7 font-semibold pr-0">
                   In the digital age, reputation is the ultimate differentiator
                 </h2>
                 <h3 className="text-base  text-[#c9c9d2]">
@@ -45,7 +45,7 @@ const Solutions = () => {
                   represented accurately and favorably
                 </h3>
                 <div className=" mt-7">
-                  <button className="text-black py-2 px-4 font-medium bg-white rounded-lg">
+                  <button className="text-[#0D2440] py-3 px-8 font-bold bg-white rounded-full border border-gray-100 shadow-md hover:bg-blue-primary hover:text-white hover:border-blue-primary hover:shadow-lg hover:shadow-blue-primary/20 transition-all duration-300 transform hover:-translate-y-1">
                     Get started today{" "}
                   </button>
                 </div>
@@ -63,7 +63,7 @@ const Solutions = () => {
         <div className="w-full flex mt-20 gap-10  relative z-20  ">
           <div className="w-1/2 h-full py-8">
             <h2 className="text-base  text-blue-soft uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">Reputation Repair</h2>
-            <h2 className="text-2xl text-white py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
+            <h2 className="text-2xl text-white py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
             Suppress Negative Google Results and Shine Online
             </h2>
             <h3 className="text-base pr-12 text-[#94949e]" data-aos="fade-up" data-aos-duration="1400">
@@ -170,7 +170,7 @@ const Solutions = () => {
           </div>
           <div className="w-1/2 h-full pl-12 py-8">
           <h2 className="text-base  text-blue-soft uppercase tracking-wide" data-aos="fade-up" data-aos-duration="1200">Brand Integrity</h2>
-          <h2 className="text-2xl text-white py-5 font-bold" data-aos="fade-up" data-aos-duration="1300">
+          <h2 className="text-2xl text-white py-5 font-semibold" data-aos="fade-up" data-aos-duration="1300">
             Align Your Brand Promise with a Stellar Reputation
             </h2>
             <h3 className="text-base pr-12 text-[#94949e]" data-aos="fade-up" data-aos-duration="1400">
@@ -213,7 +213,7 @@ const Solutions = () => {
         {/* grid section */}
         <section>
           <div className="w-full flex flex-col items-center relative z-40 mt-32">
-            <h2 className="text-3xl font-bold leading-tight text-center px-16"  data-aos="fade-up" data-aos-duration="1300">
+            <h2 className="text-3xl font-semibold leading-tight text-center px-16"  data-aos="fade-up" data-aos-duration="1300">
             Manage your online presence with confidence using our advanced reputation management services
             </h2>
             <h3 className="text-lg text-center leading-6 pt-7 text-[#94949e]"  data-aos="fade-up" data-aos-duration="1400">
@@ -221,43 +221,43 @@ const Solutions = () => {
             </h3>
 
             <div className="mt-9 h-full  relative z-40 w-full">
-              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-14 pt-16 lg:pt-14">
-                <div data-aos="fade-up" data-aos-duration="1000">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-14 pt-16 lg:pt-14 items-stretch">
+                <div className="h-full" data-aos="fade-up" data-aos-duration="1000">
                   <SolutionsCard
                     title="Reputation Audit"
                     para="We analyze your online reputation, identify threats, and create a customized strategy to protect and promote your brand."
                     icon={<MdAutoGraph />}
                   />
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1200">
+                <div className="h-full" data-aos="fade-up" data-aos-duration="1200">
                   <SolutionsCard
                     title="Brand Asset Building"
                     para="We identify and optimize your online assets, creating a framework for posting positive content and building your online presence."
                     icon={<IoCodeSlashOutline />}
                   />
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1500">
+                <div className="h-full" data-aos="fade-up" data-aos-duration="1500">
                   <SolutionsCard
                     title="Cross-Channel Reviews"
                     para="Get a 360º view of your brand with our AI-driven platform, combining internal and external data from hundreds of sources."
                     icon={<SiWebauthn />}
                   />
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div className="h-full" data-aos="fade-up" data-aos-duration="1000">
                   <SolutionsCard
                     title="Content Development"
                     para="We create optimized content to strengthen your online presence and dominate Google searches."
                     icon={<MdAutoGraph />}
                   />
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1200">
+                <div className="h-full" data-aos="fade-up" data-aos-duration="1200">
                   <SolutionsCard
                     title="Media Publishing"
                     para="We publish your content on top sites, boosting visibility and amplifying your brand message."
                     icon={<IoCodeSlashOutline />}
                   />
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1500">
+                <div className="h-full" data-aos="fade-up" data-aos-duration="1500">
                   <SolutionsCard
                     title="Awareness Campaigns"
                     para="We amplify your brand through multi-channel promotion, reaching the widest audience possible."

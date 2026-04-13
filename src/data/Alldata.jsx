@@ -11,11 +11,11 @@ import testimonial2 from '../assets/images/testimonial2.jpg'
 import testimonial3 from '../assets/images/testimonial3.jpg'
 import testimonial4 from '../assets/images/testimonial4.jpg'
 import testimonial5 from '../assets/images/testimonial5.jpg'
-import resourceImg1 from '../assets/images/an-isometric-3d-illustration-of-a-scalab_HXlAO6QIQ6-MciOwl2XejQ_xku9Yz_fTBSL-z2nkXHwfA_cover_sd.jpeg'
-import resourceImg2 from '../assets/images/a-cinematic-close-up-photograph-of-a-mod_3GYA4YsOSOGKRI2WiA764A_vLRvIyOtTD--Jv69VErI-A_cover_sd.jpeg'
-import resourceImg3 from '../assets/images/a-clean-minimal-workflow-automation-diag_uqQJOw88RF27NJNV2CBjEw_QXJfguVTTwGVlTECQ_zMSw_sd.jpeg'
-import resourceImg4 from '../assets/images/a-clean-technical-diagram-illustrating-s_v03XeyBsRgS9Ehv-AvrSMQ_xbCWprl2SbG19e4FwP2BcA_sd.jpeg'
-import resourceImg5 from '../assets/images/Cloud security and data backup system.png'
+import resourceImg1 from '../assets/images/3d-illustration.jpeg'
+import resourceImg2 from '../assets/images/cinematic-close-up.jpeg'
+import resourceImg3 from '../assets/images/workflow.jpeg'
+import resourceImg4 from '../assets/images/technical-diagram.jpeg'
+import resourceImg5 from '../assets/images/cloud-security.jpeg'
 
 export const toolitems = [
   {
