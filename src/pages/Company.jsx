@@ -168,10 +168,10 @@ const Company = () => {
                 { count: "10x", label: "Scalable Solutions" },
               ].map((item, i) => (
                 <li key={i} className="flex flex-col items-center flex-1">
-                  <span className="text-4xl md:text-6xl font-black text-[#0D2440] mb-3 tracking-tighter decoration-blue-primary decoration-4 underline-offset-8">
+                  <span className="text-3xl md:text-5xl font-bold text-[#0D2440] mb-3 tracking-tighter decoration-blue-primary decoration-4 underline-offset-8">
                     {item.count}
                   </span>
-                  <span className="text-blue-primary font-black uppercase tracking-[0.2em] text-[10px] md:text-xs px-3 py-1 bg-blue-primary/5 rounded-full border border-blue-primary/10">
+                  <span className="text-blue-primary font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs px-3 py-1 bg-blue-primary/5 rounded-full border border-blue-primary/10">
                     {item.label}
                   </span>
                 </li>
