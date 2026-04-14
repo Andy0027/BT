@@ -14,7 +14,7 @@ const ResourcesFAQ = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-10 lg:gap-20">
           <div className="w-full md:w-1/2">
-            <h2 className="text-[#0D2440] text-base font-bold uppercase tracking-widest">
+            <h2 className="text-navy-main text-base font-bold tracking-widest">
               FAQs
             </h2>
             <h2 className="text-2xl sm:text-3xl md:text-4xl pr-0 md:pr-8 leading-tight font-semibold py-4 text-[#0D2440]">

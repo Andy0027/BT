@@ -13,7 +13,7 @@ function TermsAndUse() {
           <div className="absolute inset-0 flex justify-center -top-20">
             <div className="w-[800px] h-[800px] bg-gradient-radial from-blue-primary/30 via-navy-main to-navy-main rounded-full blur-3xl opacity-60" />
           </div>
-          <div className="flex flex-col relative z-40 pt-24 lg:pt-32 max-w-5xl mx-auto">
+          <div className="flex flex-col relative z-40 pt-32 lg:pt-40 max-w-5xl mx-auto">
               <div className="flex justify-center text-center">
                 <h2 className="mb-5  text-center md:text-5xl text-3xl font-medium text-white">
                  Terms and Conditions

@@ -11,7 +11,7 @@ function HomeLyout() {
         document.documentElement.scrollTo({ top:0, left:0, behavior: "instant" });
     }, [location.pathname]);
   return (
-    <main>
+    <main className="overflow-x-hidden w-full relative">
         <MegaMenu/>
         <Outlet/>
         <Footer/>

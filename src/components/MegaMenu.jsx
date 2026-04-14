@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo_transparent.png'
+import finalLogo from '../assets/images/Brilliant_Technologies_logo_design__2_-removebg-preview.png'
 
 function MegaMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +20,13 @@ function MegaMenu() {
   return (
     <nav className="fixed top-0 left-0 w-full py-2 px-6 lg:py-2 lg:px-32 shadow-lg z-[9999] bg-[#0D2440] border-b border-[#FFFFFF0D]">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold text-white flex items-center gap-2">
-          <Link to="/">
-            <img 
-              src={logo} 
-              alt="Brilliant Technologies" 
-              className="h-8 sm:h-10 md:h-12 w-auto object-contain scale-[1.8] sm:scale-[2] md:scale-[2.5] origin-left"
-            />
+        <div className="h-10 md:h-12 w-32 md:w-48 flex items-center relative">
+          <Link to="/" className="absolute left-[-32px] md:left-[-56px] top-1/2 -translate-y-1/2">
+             <img 
+               src={finalLogo} 
+               alt="Brilliant Technologies" 
+               className="h-[110px] md:h-[156px] w-auto object-contain origin-left"
+             />
           </Link>
         </div>
 
@@ -38,7 +39,7 @@ function MegaMenu() {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex space-x-6 text-[15px] text-white">
+        <ul className="hidden lg:flex space-x-6 text-base font-medium text-white">
           <li><Link to="/cloud-infrastructure">Cloud Infrastructure</Link></li>
           <li><Link to="/solutions">IaaS Solutions</Link></li>
           <li><Link to="/cybersecurity">Cybersecurity</Link></li>
@@ -56,7 +57,7 @@ function MegaMenu() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="lg:hidden bg-[#0D2440] rounded-lg py-4  mt-2 space-y-4 text-sm text-left px-6 text-white border border-[#FFFFFF0D]">
+        <ul className="lg:hidden bg-[#0D2440] rounded-lg py-4  mt-2 space-y-4 text-base text-left px-6 text-white border border-[#FFFFFF0D]">
           <li><Link to="/cloud-infrastructure" onClick={() => setIsOpen(false)}> Cloud Infrastructure</Link></li>
           <li><Link to="/solutions" onClick={() => setIsOpen(false)}>IaaS Solutions</Link></li>
           <li><Link to="/cybersecurity" onClick={() => setIsOpen(false)}>Cybersecurity</Link></li>

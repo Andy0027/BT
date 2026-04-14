@@ -7,7 +7,7 @@ import bigCardImg from '../assets/images/software_development_team.png';
 function Resources() {
   return (
     <>
-      <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-[7%] py-12 bg-[#E7F0FA] text-[#0D2440] relative overflow-hidden">
+      <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-32 py-12 bg-[#E7F0FA] text-[#0D2440] relative overflow-hidden">
         
         {/* Abstract Background Blur */}
         <div className="absolute inset-0 flex justify-center pointer-events-none">

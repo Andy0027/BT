@@ -57,12 +57,10 @@ function Contact() {
         <div className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-blue-soft/20 rounded-full blur-[100px]" />
       </div>
 
-      <div className="relative z-40 pt-32 pb-20 px-6 sm:px-12 lg:px-32">
+      <div className="relative z-40 pt-24 lg:pt-28 pb-20 px-6 sm:px-12 lg:px-32">
         
         <div className="text-center max-w-3xl mx-auto mb-10" data-aos="fade-up">
-          <span className="px-4 py-1.5 bg-blue-primary/10 text-blue-primary rounded-full text-xs font-semibold uppercase tracking-widest mb-4 inline-block border border-blue-primary/20">
-            Get in touch
-          </span>
+
           <h1 className="text-3xl md:text-5xl font-semibold text-[#0D2440] leading-tight mb-4">
              Connect With Our <br /> <span className="text-blue-primary">Expert Team</span>
           </h1>
@@ -73,7 +71,7 @@ function Contact() {
         </div>
 
         {/* Main Content: Info + Form */}
-        <div className="h-auto flex flex-col lg:flex-row gap-8 items-start max-w-7xl mx-auto px-6 sm:px-6 md:px-16 lg:px-32 pt-[5%] py-8 bg-[#E7F0FA] text-[#0D2440] relative">
+        <div className="h-auto flex flex-col lg:flex-row gap-8 items-start max-w-7xl mx-auto px-6 sm:px-6 md:px-16 lg:px-32 pt-0 py-8 bg-[#E7F0FA] text-[#0D2440] relative">
           
           {/* Left: Contact Info Cards */}
           <div className="w-full lg:w-1/3 flex flex-col gap-4" data-aos="fade-right">

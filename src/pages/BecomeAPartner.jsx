@@ -66,7 +66,7 @@ function BecomeAPartner() {
   }
 
   return (
-    <section className="bg-[#E7F0FA] min-h-screen relative overflow-hidden pt-28 pb-12">
+    <section className="bg-[#E7F0FA] min-h-screen relative overflow-hidden pt-24 lg:pt-28 pb-12">
       
       {/* Background Orbs */}
       <div className="absolute inset-0 flex justify-center pointer-events-none">
@@ -76,18 +76,18 @@ function BecomeAPartner() {
 
       <div className="relative z-40 px-6 sm:px-12 lg:px-32 max-w-7xl mx-auto">
         
-        <div className="flex flex-col lg:flex-row gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-10 items-center">
           
           {/* Left Side: Content */}
           <div className="w-full lg:w-1/2" data-aos="fade-right">
-             <span className="px-4 py-2 bg-blue-primary/10 text-blue-primary rounded-full text-xs font-black uppercase tracking-widest mb-8 inline-block">
+             <span className="px-4 py-2 bg-blue-primary/10 text-blue-primary rounded-full text-xs font-black uppercase tracking-widest mb-4 inline-block">
                 Partnership Program 2026
              </span>
-             <h1 className="text-3xl md:text-5xl font-semibold text-[#0D2440] leading-[1.1] mb-6">
+             <h1 className="text-3xl md:text-5xl font-semibold text-[#0D2440] leading-[1.1] mb-4">
                 Grow Your Business <br />
                 <span className="text-blue-primary text-2xl md:text-4xl">With Brilliant Technologies</span>
              </h1>
-             <p className="text-base text-gray-600 font-medium leading-relaxed mb-8 pr-0 lg:pr-12">
+             <p className="text-base text-gray-600 font-medium leading-relaxed mb-6 pr-0 lg:pr-12">
                 Join our ecosystem. We provide the tools and 
                 infrastructure you need to deliver world-class cloud 
                 solutions to your clients.

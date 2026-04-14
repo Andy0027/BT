@@ -8,6 +8,7 @@ import { CiDatabase } from "react-icons/ci";
 import { FaRegFileCode } from "react-icons/fa";
 import { AiOutlineNodeCollapse } from "react-icons/ai";
 import { IoSettingsOutline } from "react-icons/io5";
+import { CheckCircle, Target, Eye, Shield } from "lucide-react";
 
 const Company = () => {
   const [selected, setSelected] = useState(1);
@@ -16,6 +17,7 @@ const Company = () => {
     {
       id: 1,
       title: "Mission",
+      icon: <Target className="w-4 h-4" />,
       heading: "Empowering Growth with Scalable Technology",
       paragraph:
         "To empower businesses with scalable, secure, and future-ready technology solutions that drive real-world impact.",
@@ -23,6 +25,7 @@ const Company = () => {
     {
       id: 2,
       title: "Vision",
+      icon: <Eye className="w-4 h-4" />,
       heading: "A Global Leader in Digital Excellence",
       paragraph:
         "To become a global leader in digital transformation, known for innovation, reliability, and excellence.",
@@ -30,13 +33,23 @@ const Company = () => {
     {
       id: 3,
       title: "Values",
+      icon: <Shield className="w-4 h-4" />,
       heading: "Our Core Principles",
       paragraph: (
-        <ul className="space-y-2 mt-2">
-          <li className="flex items-center gap-2">• Customer-first mindset</li>
-          <li className="flex items-center gap-2">• Innovation with purpose</li>
-          <li className="flex items-center gap-2">• Transparency & trust</li>
-          <li className="flex items-center gap-2">• Continuous improvement</li>
+        <ul className="space-y-3 mt-4">
+          {[
+            "Customer-first mindset",
+            "Innovation with purpose",
+            "Transparency & trust",
+            "Continuous improvement"
+          ].map((val, i) => (
+            <li key={i} className="flex items-center gap-3 text-[#0D2440] font-bold text-sm">
+              <div className="p-1 bg-blue-primary/10 rounded-full text-blue-primary">
+                <CheckCircle size={14} />
+              </div>
+              {val}
+            </li>
+          ))}
         </ul>
       ),
     },
@@ -44,9 +57,11 @@ const Company = () => {
 
   return (
     <>
-      <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-[7%] py-12 bg-[#E7F0FA] text-[#0D2440] relative">
+      <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-32 py-12 bg-[#E7F0FA] text-[#0D2440] relative overflow-hidden">
         <div className="absolute inset-0 flex justify-center pointer-events-none">
-          <div className="w-[1000px] h-[800px] bg-gradient-radial from-blue-primary/20 via-[#E7F0FA] to-[#E7F0FA] rounded-full blur-3xl opacity-90" />
+          <div className="w-[1000px] h-[800px] bg-gradient-radial from-blue-primary/10 via-[#E7F0FA] to-[#E7F0FA] rounded-full blur-3xl opacity-70 animate-pulse transition-all duration-1000" />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-soft/10 rounded-full blur-[100px] -mr-48 -mt-48" />
+          <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-blue-primary/5 rounded-full blur-[120px] -ml-40" />
         </div>
 
         <div className="flex flex-col items-center h-full relative z-40 pt-10 text-center">
@@ -55,7 +70,7 @@ const Company = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Get to Know Brilliant Technologies
+            Get to Know <span className="text-blue-primary font-black underline decoration-blue-primary/30 decoration-8 underline-offset-8">Brilliant Technologies</span>
           </h1>
           <p
             className="text-base sm:text-lg text-gray-600 mt-6 max-w-3xl leading-relaxed font-medium"
@@ -66,39 +81,62 @@ const Company = () => {
             clarity, and cutting-edge technology.
           </p>
 
-          <div className="mt-16 w-full rounded-2xl bg-white shadow-xl border border-gray-100 overflow-hidden text-left" data-aos="fade-up" data-aos-duration="500">
-            <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 p-6 sm:p-10 lg:p-16">
+          <div 
+            className="mt-16 w-full rounded-[2.5rem] bg-white/70 backdrop-blur-3xl shadow-[0_32px_64px_-16px_rgba(46,94,153,0.1)] border border-white/80 overflow-hidden text-left relative group" 
+            data-aos="fade-up" 
+            data-aos-duration="800"
+          >
+            {/* Inner Decorative Glow */}
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-primary/5 rounded-full blur-[100px] pointer-events-none group-hover:bg-blue-primary/10 transition-colors duration-700" />
+            
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 p-8 sm:p-12 lg:p-20 relative z-10">
               <div className="w-full lg:w-1/2">
-                <h2 className="text-base text-[#0D2440] font-bold uppercase tracking-wide">WHO WE ARE</h2>
-                <h2 className="text-3xl sm:text-4xl py-7 font-semibold text-[#0D2440] leading-tight">
-                  Built on Innovation<br />
-                  Focused on People<br />
-                  Designed for the Future
+
+                
+                <h2 className="text-3xl sm:text-5xl font-semibold leading-[1.15] mb-8">
+                  <span className="text-[#0D2440]">Built on </span>
+                  <span className="text-blue-primary">Innovation</span><br />
+                  <span className="text-[#0D2440]">Focused on </span>
+                  <span className="text-blue-soft">People</span><br />
+                  <span className="text-[#0D2440]">Designed for </span>
+                  <span className="text-blue-primary/80">Future</span>
                 </h2>
-                <h3 className="text-gray-600 text-base sm:text-lg leading-relaxed font-medium">
+                
+                <h3 className="text-gray-600 text-base sm:text-lg leading-relaxed font-medium border-l-4 border-blue-primary/10 pl-6 py-2">
                   At Brilliant Technologies, we believe technology should simplify complexity, empower growth, and create meaningful impact. 
                   Our approach blends deep technical expertise with a human-first mindset.
                 </h3>
               </div>
+
               <div className="w-full lg:w-1/2">
                 <div className="mx-auto">
-                  <div className="flex flex-row justify-between bg-[#E7F0FA] p-1 rounded-xl overflow-hidden border border-gray-100">
+                  <div className="relative flex flex-row justify-between bg-blue-subtle/50 p-1.5 rounded-2xl overflow-hidden border border-white/50 shadow-inner">
                     {aboutdata.map((item) => (
                       <button
                         key={item.id}
                         onClick={() => setSelected(item.id)}
-                        className={`flex-1 py-3 px-2 sm:px-6 rounded-lg font-bold transition-all duration-300 ${
+                        className={`relative z-10 flex-1 py-3.5 px-3 sm:px-6 rounded-xl font-bold transition-all duration-500 flex items-center justify-center gap-2 ${
                           selected === item.id 
-                            ? "bg-white text-[#0D2440] shadow-sm" 
-                            : "text-[#0D2440]/60 hover:text-[#0D2440]"
+                            ? "text-[#0D2440]" 
+                            : "text-[#0D2440]/40 hover:text-[#0D2440]/70"
                         }`}
                       >
-                        {item.title}
+                        {item.icon}
+                        <span className="text-sm uppercase tracking-wider">{item.title}</span>
                       </button>
                     ))}
+                    {/* Sliding Background Pill */}
+                    <div 
+                      className="absolute top-1 bottom-1 left-1.5 bg-white rounded-[0.8rem] shadow-md transition-all duration-500 ease-out z-0 border border-blue-primary/5"
+                      style={{ 
+                        width: 'calc(33.33% - 4px)',
+                        transform: `translateX(${(selected - 1) * 100}%)`
+                      }}
+                    />
                   </div>
-                  <div className="mt-8">
-                    <h2 className="text-2xl font-semibold text-[#0D2440] mb-4">
+                  
+                  <div className="mt-10 min-h-[200px]" key={selected} data-aos="fade-in">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#0D2440] mb-5 tracking-tight">
                       {aboutdata.find((s) => s.id === selected)?.heading}
                     </h2>
                     <div className="text-base text-gray-600 leading-relaxed font-medium">
@@ -120,17 +158,22 @@ const Company = () => {
           </div>
 
           {/* Counts */}
-          <div className="bg-white rounded-2xl p-8 md:p-16 shadow-xl w-full mt-20 border border-gray-50" data-aos="fade-up" data-aos-duration="800">
-            <ul className="flex flex-col sm:flex-row justify-between text-center gap-10 sm:gap-0">
+          <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-10 md:p-16 shadow-[0_32px_64px_-16px_rgba(46,94,153,0.08)] w-full mt-24 border border-white relative overflow-hidden group" data-aos="fade-up" data-aos-duration="800">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+            <ul className="flex flex-col sm:flex-row justify-between text-center gap-12 sm:gap-6 relative z-10">
               {[
                 { count: "5+", label: "Years of Excellence" },
                 { count: "100%", label: "Client-Centric Approach" },
                 { count: "1000+", label: "Businesses Empowered" },
-                { count: "10x", label: "Scalable Solutions Delivered" },
+                { count: "10x", label: "Scalable Solutions" },
               ].map((item, i) => (
-                <li key={i} className="flex flex-col items-center">
-                  <span className="text-4xl md:text-5xl font-bold text-blue-primary mb-2">{item.count}</span>
-                  <span className="text-gray-500 font-bold uppercase tracking-wider text-sm">{item.label}</span>
+                <li key={i} className="flex flex-col items-center flex-1">
+                  <span className="text-4xl md:text-6xl font-black text-[#0D2440] mb-3 tracking-tighter decoration-blue-primary decoration-4 underline-offset-8">
+                    {item.count}
+                  </span>
+                  <span className="text-blue-primary font-black uppercase tracking-[0.2em] text-[10px] md:text-xs px-3 py-1 bg-blue-primary/5 rounded-full border border-blue-primary/10">
+                    {item.label}
+                  </span>
                 </li>
               ))}
             </ul>

@@ -19,7 +19,7 @@ import { GradientChart } from "../chart/GradientChart";
 import { LineChart } from "../chart/LineChart";
 import SoftwareSolution from "../components/SoftwareSolution";
 import Newsletter from "../components/Newsletter";
-import db from "../assets/images/Brilliant-Technologies-cloud-dashboard.jpeg";
+import db from "../assets/images/cloud-dashboard.jpeg";
 import hero from "../assets/images/bg.jpg";
 import Switchbutton from "../components/SwitchButton";
 import Cybersecurity from "../components/CyberSecurity";
@@ -63,7 +63,7 @@ function Home() {
         <CloudNetworkBackground />
       </div>
 
-      <div className={`${style.video_bg} relative z-10 flex flex-col justify-center items-center h-screen text-center px-4 pt-16 pb-16 gap-12`}>
+      <div className={`${style.video_bg} relative z-10 flex flex-col justify-center items-center min-h-screen text-center px-4 pt-32 pb-16 gap-12`}>
         <div data-aos="fade-down" data-aos-duration="1000">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{fontWeight: 500, color: "rgb(220, 220, 225)"}} >
             Power Your <span className="text-blue-primary">Infrastructure</span> with <br className="hidden sm:block" /> Reliable Cloud Solutions
@@ -89,69 +89,61 @@ function Home() {
     </section>
 
 
-    <section className="relative overflow-hidden bg-navy-main pt-20 md:pt-0">
-      <div className="relative w-full h-auto min-h-[500px] md:min-h-[600px] flex items-center">
+    <section className="relative overflow-hidden bg-blue-light-1 py-12 lg:py-16">
         {/* Subtle Background Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-primary/5 via-transparent to-transparent opacity-50" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-primary/5 rounded-full blur-[100px] -mr-64 -mt-64" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-primary/5 rounded-full blur-[100px] -ml-64 -mb-64" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(46,94,153,0.05),transparent)] pointer-events-none" />
         
-        
-        <div className="relative z-10 w-full px-6 sm:px-16 lg:px-32 text-white py-20 md:py-0">
-          <div className="flex flex-col lg:flex-row lg:gap-12 items-center lg:items-start text-center lg:text-left">
-            {/* Left Side */}
-            <div className="w-full lg:w-3/5">
+        <div className="relative z-10 w-full px-6 sm:px-16 lg:px-32">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-start text-navy-main">
+            {/* Left Side: Text Content */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
               <h1
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6"
-                data-aos="fade-up"
-                data-aos-duration="500"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight mb-8"
+                data-aos="fade-right"
+                data-aos-duration="1000"
               >
-               Complete Control Over Your Cloud Infrastructure
+                Complete Control Over Your <span className="text-blue-primary">Cloud Infrastructure</span>
               </h1>
-            </div>
-
-            {/* Right Side */}
-            <div className="w-full lg:w-2/5 flex flex-col justify-center lg:pt-10">
-              <h2
-                className="text-base sm:text-lg md:text-xl text-gray-300 mb-10"
-                data-aos="fade-up"
-                data-aos-duration="700"
+              <p
+                className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium"
+                data-aos="fade-right"
+                data-aos-duration="1200"
               >
-                Monitor, manage, and scale your infrastructure in real-time with powerful and intuitive dashboards.
-              </h2>
+                Monitor, manage, and scale your infrastructure in real-time with powerful and intuitive dashboards designed for total visibility and ease of use.
+              </p>
               <div
                 className="flex justify-center lg:justify-start"
                 data-aos="fade-up"
-                data-aos-duration="700"
+                data-aos-duration="1000"
               >
-               <Link to="contact" className="w-full sm:w-fit">
-                <button className="bg-white text-[#0D2440] px-10 py-4 rounded-full w-full font-bold border border-white/80 shadow-lg hover:shadow-2xl hover:bg-blue-primary hover:text-white hover:border-blue-primary transition-all duration-300 text-lg">
-                  Launch Platform
-                </button>
-               </Link>
+                <Link to="contact" className="w-full sm:w-fit">
+                  <button className="bg-blue-primary text-white px-10 py-4 rounded-full w-full font-bold border border-blue-primary shadow-lg hover:shadow-2xl hover:bg-navy-main hover:text-white hover:border-navy-main transition-all duration-300 text-lg">
+                    Launch Platform
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Side: Dashboard Image */}
+            <div 
+              className="w-full lg:w-1/2" 
+              data-aos="fade-left" 
+              data-aos-duration="1200"
+            >
+              <div className="relative group cursor-zoom-in overflow-hidden rounded-xl border-2 border-white shadow-[0_30px_80px_rgba(8,112,184,0.15)]">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-primary/30 to-blue-soft/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-40 transition-all duration-700 z-0" />
+                <img
+                  src={db}
+                  className="relative w-full h-auto scale-[1.1] origin-top transform transition-all duration-700 z-10"
+                  alt="Infrastructure Dashboard"
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* DB Image Section */}
-      <div
-        className={`${style.db_image} px-4 sm:px-8 md:px-0 mt-6 md:mt-0`}
-        data-aos="fade-up"
-        data-aos-duration="900"
-      >
-        <img
-          src={db}
-          className="rounded-lg  w-full max-w-screen-xl mx-auto"
-          alt="dashboard"
-        />
-      </div>
-
-      <div className={style.gradient}></div>
     </section>
     {/* your digital */}
-    <section className="bg-blue-light-1 py-20 md:py-28 px-4 sm:px-8 md:px-16 h-auto">
+    <section className="bg-blue-light-1 py-12 md:py-16 px-4 sm:px-8 md:px-16 h-auto overflow-hidden">
       <div className="text-center text-navy-main">
         <h1 className="hidden md:block font-semibold text-2xl sm:text-3xl lg:text-4xl leading-tight text-navy-main">
           Your Digital{" "}
@@ -242,7 +234,7 @@ function Home() {
 
 
     {/* Infrastructure Capabilities */}
-    <section className=" z-50  relative" style={{backgroundImage: "linear-gradient(180deg, #F1F7FE 0%, #E7F0FA 100%)"}}>
+    <section className=" z-50  relative overflow-hidden" style={{backgroundImage: "linear-gradient(180deg, #F1F7FE 0%, #E7F0FA 100%)"}}>
       <div className="text-center px-8 sm:px-6 md:px-10 lg:px-32">
         <h1
           className="font-medium text-2xl sm:text-3xl lg:text-5xl text-navy-main"

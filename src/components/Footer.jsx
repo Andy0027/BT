@@ -1,21 +1,22 @@
 import { FaXTwitter } from "react-icons/fa6";
 import { MdLocationOn } from "react-icons/md";
-import { company, resources, solutions } from "../data/footerdata";
+import { company, legal, resources, solutions } from "../data/footerdata";
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo_transparent.png'
+import finalLogo from '../assets/images/Brilliant_Technologies_logo_design__2_-removebg-preview.png'
 
 const Footer = () => {
   return (
     <footer className="bg-[#0D2440] text-white px-6 py-12 md:px-32 border-t border-[#FFFFFF0D]">
       {/* Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Branding Section */}
         <div>
-          <Link to="/" className="inline-block mb-5">
+          <Link to="/" className="inline-block mb-10 -ml-8 md:-ml-14">
             <img 
-              src={logo} 
+              src={finalLogo} 
               alt="Brilliant Technologies" 
-              className="h-20 md:h-24 w-auto object-contain scale-[1.3] md:scale-[1.5] origin-left"
+              className="h-32 md:h-44 w-auto object-contain origin-left"
             />
           </Link>
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
@@ -67,6 +68,20 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm">
             {company.map((item) => (
+              <li key={item.name}>
+                <Link to={item.to} className="text-gray-300 hover:text-white transition">
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Legal */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Legal</h3>
+          <ul className="space-y-2 text-sm">
+            {legal.map((item) => (
               <li key={item.name}>
                 <Link to={item.to} className="text-gray-300 hover:text-white transition">
                   {item.name}

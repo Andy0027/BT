@@ -57,6 +57,13 @@ export let company = [
         to:"company"
     },
     {
+        name:"Pricing",
+        to:"contact"
+    },
+]
+
+export let legal = [
+    {
         name:"Terms & Conditions",
         to:"terms-and-conditions"
     },
@@ -64,5 +71,4 @@ export let company = [
         name:"Privacy Policy",
         to:"privacy-policy"
     },
-
 ]

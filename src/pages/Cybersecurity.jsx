@@ -14,7 +14,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 function Cybersecurity() {
   return (
-    <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-[7%] py-12 bg-[#E7F0FA] text-[#0D2440] relative">
+    <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-32 py-12 bg-[#E7F0FA] text-[#0D2440] relative">
       <div className="absolute inset-0 flex justify-center pointer-events-none">
         <div className="w-[1000px] h-[800px] bg-gradient-radial from-blue-primary/20 via-[#E7F0FA] to-[#E7F0FA] rounded-full blur-3xl opacity-90" />
       </div>

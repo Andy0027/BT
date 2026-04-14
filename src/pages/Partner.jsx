@@ -11,7 +11,7 @@ import PartnerFAQ from '../components/PartnerFAQ';
 function Partner() {
   return (
     <>
-      <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-[7%] py-12 bg-[#E7F0FA] text-[#0D2440] relative">
+      <div className="h-auto flex flex-col px-6 sm:px-6 md:px-16 lg:px-32 pt-32 py-12 bg-[#E7F0FA] text-[#0D2440] relative">
         
         {/* Decorative Background */}
         <div className="absolute inset-0 flex justify-center pointer-events-none">
