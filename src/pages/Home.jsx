@@ -91,7 +91,11 @@ function Home() {
 
     <section className="relative overflow-hidden bg-navy-main pt-20 md:pt-0">
       <div className="relative w-full h-auto min-h-[500px] md:min-h-[600px] flex items-center">
-        <img src={hero} className="absolute inset-0 w-full h-full object-cover opacity-50 md:opacity-100" />
+        {/* Subtle Background Glow */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-primary/5 via-transparent to-transparent opacity-50" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-primary/5 rounded-full blur-[100px] -mr-64 -mt-64" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-primary/5 rounded-full blur-[100px] -ml-64 -mb-64" />
+        
         
         <div className="relative z-10 w-full px-6 sm:px-16 lg:px-32 text-white py-20 md:py-0">
           <div className="flex flex-col lg:flex-row lg:gap-12 items-center lg:items-start text-center lg:text-left">
