@@ -20,16 +20,14 @@ const Footer = () => {
             />
           </Link>
           <div className="-mt-16 px-1 md:px-0 text-center md:text-left">
-            <p className="text-blue-400 font-bold text-sm tracking-tight mb-4 italic whitespace-nowrap">
+            <p className="text-blue-400 font-bold text-sm tracking-tight mb-4 whitespace-nowrap">
               Infrastructure That Moves With You
             </p>
 
 
           </div>
 
-          <p className="text-gray-300 text-sm leading-relaxed mb-6">
-            Brilliant Technologies provides scalable, secure, and high-performance cloud infrastructure solutions for modern businesses.
-          </p>
+
 
 
 
