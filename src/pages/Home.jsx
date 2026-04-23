@@ -27,8 +27,6 @@ import Testimonial from "../components/Testimonial";
 import CTA from "../components/CTA";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-
 import HeroInfraVisual from "../components/HeroInfraVisual";
 
 function Home() {
@@ -144,7 +142,7 @@ function Home() {
         </motion.div>
 
 
-        {/* Bottom Scroll Indicator - Optional but adds "wow" */}
+        {/* Bottom Scroll Indicator */}
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
@@ -301,8 +299,6 @@ function Home() {
 
 
 
-
-
     {/* Infrastructure Capabilities */}
     <section className=" z-50  relative overflow-hidden" style={{backgroundImage: "linear-gradient(180deg, #F1F7FE 0%, #E7F0FA 100%)"}}>
       <div className="text-center px-8 sm:px-6 md:px-10 lg:px-32">
@@ -318,7 +314,7 @@ function Home() {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Built for Performance, Security & Scale. Our enterprise-grade 
+          Built for Performance, Security &amp; Scale. Our enterprise-grade 
           infrastructure solutions empower you with total control and reliability.
         </p>
       </div>

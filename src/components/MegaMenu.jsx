@@ -105,12 +105,12 @@ function MegaMenu() {
     <nav className="fixed top-0 left-0 w-full py-2 px-6 lg:py-2 lg:px-32 shadow-lg z-[9999] bg-[#0D2440] border-b border-[#FFFFFF0D]">
       <div className="container mx-auto flex justify-between items-center">
 
-        {/* Logo */}
-        <div className="h-10 md:h-12 w-32 md:w-48 flex items-center relative">
+        <div className="h-14 md:h-16 w-36 md:w-56 flex items-center relative">
           <Link to="/" className="absolute left-[-32px] md:left-[-56px] top-1/2 -translate-y-1/2">
-            <img src={finalLogo} alt="Brilliant Technologies" className="h-[110px] md:h-[156px] w-auto object-contain origin-left" />
+            <img src={finalLogo} alt="Brilliant Technologies" className="h-[140px] md:h-[186px] w-auto object-contain origin-left" />
           </Link>
         </div>
+
 
         {/* Mobile Toggle */}
         <button className="lg:hidden text-white" onClick={() => setIsOpen(!isOpen)}>

@@ -12,7 +12,7 @@ export let solutions = [
         to:"cybersecurity"
     },
     {
-        name:"ORM Systems",
+        name:"ORM",
         to:"orm"
     },
     {
@@ -23,23 +23,11 @@ export let solutions = [
 
 export let resources = [
     {
-        name:"Resource Center",
-        to:"resources"
-    },
-    {
-        name:"Technical Blog",
+        name:"Blog",
         to:"resources"
     },
     {
         name:"Case Studies",
-        to:"resources"
-    },
-    {
-        name:"Whitepapers",
-        to:"resources"
-    },
-    {
-        name:"Documentation",
         to:"resources"
     }
 ]
@@ -50,20 +38,12 @@ export let company = [
         to:"company"
     },
     {
-        name:"Our Partners",
-        to:"partner"
-    },
-    {
         name:"Become a Partner",
         to:"become-a-partner"
     },
     {
         name:"Contact Us",
         to:"contact"
-    },
-    {
-        name:"Executive Team",
-        to:"company"
     },
 ]
 
