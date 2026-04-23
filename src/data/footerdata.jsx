@@ -11,12 +11,23 @@ export let solutions = [
         name:"Cybersecurity",
         to:"cybersecurity"
     },
-
+    {
+        name:"ORM Systems",
+        to:"orm"
+    },
+    {
+        name:"Software Development",
+        to:"software-development"
+    },
 ]
 
 export let resources = [
     {
-        name:"Blog ",
+        name:"Resource Center",
+        to:"resources"
+    },
+    {
+        name:"Technical Blog",
         to:"resources"
     },
     {
@@ -24,25 +35,23 @@ export let resources = [
         to:"resources"
     },
     {
-        name:"News",
+        name:"Whitepapers",
         to:"resources"
     },
     {
-        name:"Videos ",
+        name:"Documentation",
         to:"resources"
-    },
-    {
-        name:"Reports",
-        to:"resources"
-    },
-  
-
+    }
 ]
 
 export let company = [
     {
-        name:"Request a Demo ",
-        to:"contact"
+        name:"About Us",
+        to:"company"
+    },
+    {
+        name:"Our Partners",
+        to:"partner"
     },
     {
         name:"Become a Partner",
@@ -53,11 +62,11 @@ export let company = [
         to:"contact"
     },
     {
-        name:"About Brilliant Technologies ",
+        name:"Executive Team",
         to:"company"
     },
     {
-        name:"Pricing",
+        name:"Careers",
         to:"contact"
     },
 ]

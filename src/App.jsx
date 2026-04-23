@@ -13,6 +13,8 @@ import Contact from './pages/Contact'
 import Resources from './pages/Resources'
 import Partner from './pages/Partner'
 import BecomeAPartner from './pages/BecomeAPartner'
+import SoftwareDevelopment from './pages/SoftwareDevelopment'
+import ORM from './pages/ORM'
 
 function App() {
   return (
@@ -30,10 +32,13 @@ function App() {
       <Route path='resources' element={<Resources/>}/>
       <Route path='partner' element={<Partner/>}/>
       <Route path='become-a-partner' element={<BecomeAPartner/>}/>
+      <Route path='software-development' element={<SoftwareDevelopment/>}/>
+      <Route path='orm' element={<ORM/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
   )
 }
+
 
 export default App

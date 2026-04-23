@@ -41,12 +41,12 @@ function MegaMenu() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-6 text-base font-medium text-white">
           <li><Link to="/cloud-infrastructure">Cloud Infrastructure</Link></li>
-          <li><Link to="/solutions">IaaS Solutions</Link></li>
           <li><Link to="/cybersecurity">Cybersecurity</Link></li>
-          <li><Link to="/company">Company</Link></li>
-          <li><Link to="/partner">Partners</Link></li>
-          <li><Link to="/resources">Resources</Link></li>
+          <li><Link to="/solutions">IaaS Solutions</Link></li>
+          <li><Link to="/orm">ORM</Link></li>
+          <li><Link to="/software-development">Software Development</Link></li>
         </ul>
+
 
         <Link to="/contact" className="hidden lg:block">
           <button className="bg-blue-primary text-white font-bold py-2.5 px-8 rounded-full border border-blue-primary/50 shadow-lg shadow-blue-primary/10 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
@@ -59,11 +59,11 @@ function MegaMenu() {
       {isOpen && (
         <ul className="lg:hidden bg-[#0D2440] rounded-lg py-4  mt-2 space-y-4 text-base text-left px-6 text-white border border-[#FFFFFF0D]">
           <li><Link to="/cloud-infrastructure" onClick={() => setIsOpen(false)}> Cloud Infrastructure</Link></li>
-          <li><Link to="/solutions" onClick={() => setIsOpen(false)}>IaaS Solutions</Link></li>
           <li><Link to="/cybersecurity" onClick={() => setIsOpen(false)}>Cybersecurity</Link></li>
-          <li><Link to="/company" onClick={() => setIsOpen(false)}>Company</Link></li>
-          <li><Link to="/partner" onClick={() => setIsOpen(false)}>Partner</Link></li>
-          <li><Link to="/resources" onClick={() => setIsOpen(false)}>Resources</Link></li>
+          <li><Link to="/solutions" onClick={() => setIsOpen(false)}>IaaS Solutions</Link></li>
+          <li><Link to="/orm" onClick={() => setIsOpen(false)}>ORM</Link></li>
+          <li><Link to="/software-development" onClick={() => setIsOpen(false)}>Software Development</Link></li>
+
           <li>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               <button className="bg-blue-primary text-white font-bold py-3 px-6 rounded-full w-full border border-blue-primary/50 shadow-lg hover:bg-white hover:text-blue-primary hover:border-white transition-all duration-300">
