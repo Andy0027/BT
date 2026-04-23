@@ -16,51 +16,62 @@ const menuData = [
     title: "Cloud Infrastructure",
     path: "/cloud-infrastructure",
     subItems: [
-      { icon: <Server size={18}/>, name: "Scalable Compute", desc: "Elastic virtual instances for any workload", path: "/cloud-infrastructure" },
-      { icon: <HardDrive size={18}/>, name: "Object Storage", desc: "Highly available data storage solutions", path: "/cloud-infrastructure" },
-      { icon: <Globe2 size={18}/>, name: "Global Networking", desc: "Low-latency private connectivity worldwide", path: "/cloud-infrastructure" }
+      { icon: <Server size={18}/>, name: "Virtual Compute", desc: "Elastic VMs & Bare Metal instances", path: "/cloud-infrastructure" },
+      { icon: <HardDrive size={18}/>, name: "Block & Object Storage", desc: "Highly available scalable storage", path: "/cloud-infrastructure" },
+      { icon: <Globe2 size={18}/>, name: "VPC & Networking", desc: "Private connectivity & peering", path: "/cloud-infrastructure" },
+      { icon: <Layers3 size={18}/>, name: "Load Balancing", desc: "High-performance L4/L7 traffic management", path: "/cloud-infrastructure" },
+      { icon: <Cloud size={18}/>, name: "Global CDN", desc: "Edge delivery for low-latency assets", path: "/cloud-infrastructure" }
     ]
   },
   {
     title: "Cybersecurity",
     path: "/cybersecurity",
     subItems: [
-      { icon: <ScanSearch size={18}/>, name: "Threat Detection", desc: "AI-powered real-time security monitoring", path: "/cybersecurity" },
-      { icon: <KeyRound size={18}/>, name: "Zero-Trust Access", desc: "Identity-centric security architecture", path: "/cybersecurity" },
-      { icon: <FileCheck2 size={18}/>, name: "Compliance Shield", desc: "Enterprise-grade regulation adherence", path: "/cybersecurity" }
+      { icon: <ScanSearch size={18}/>, name: "DDoS & WAF Protection", desc: "Edge-based traffic filtering & security", path: "/cybersecurity" },
+      { icon: <KeyRound size={18}/>, name: "Zero-Trust Access", desc: "Secure identity-centric connectivity", path: "/cybersecurity" },
+      { icon: <FileCheck2 size={18}/>, name: "Threat Intelligence", desc: "AI-powered real-time monitoring", path: "/cybersecurity" },
+      { icon: <Menu size={18}/>, name: "IAM & Auth Services", desc: "Advanced MFA & directory services", path: "/cybersecurity" },
+      { icon: <ClipboardCheck size={18}/>, name: "Compliance & Audits", desc: "Regulatory adherence automation", path: "/cybersecurity" }
     ]
   },
   {
     title: "IaaS Solutions",
     path: "/solutions",
     subItems: [
-      { icon: <Cpu size={18}/>, name: "Bare Metal", desc: "Dedicated high-performance hardware", path: "/solutions" },
-      { icon: <Cloud size={18}/>, name: "Hybrid Cloud", desc: "Seamless cross-environment integration", path: "/solutions" },
-      { icon: <Layers3 size={18}/>, name: "GPU Clusters", desc: "High-density compute for AI workloads", path: "/solutions" }
+      { icon: <Cpu size={18}/>, name: "Private Cloud", desc: "Single-tenant dedicated infrastructure", path: "/solutions" },
+      { icon: <Cloud size={18}/>, name: "Managed Kubernetes", desc: "Automated K8s cluster orchestration", path: "/solutions" },
+      { icon: <Layers3 size={18}/>, name: "GPU Supercomputing", desc: "High-density compute for AI & ML", path: "/solutions" },
+      { icon: <GitBranch size={18}/>, name: "Disaster Recovery", desc: "Enterprise backup & failover solutions", path: "/solutions" },
+      { icon: <Webhook size={18}/>, name: "Hybrid Integration", desc: "Seamless cross-cloud connectivity", path: "/solutions" }
     ]
   },
   {
     title: "ORM",
     path: "/orm",
     subItems: [
-      { icon: <ClipboardCheck size={18}/>, name: "Operational Readiness", desc: "Pre-deployment audit and validation", path: "/orm" },
-      { icon: <BarChart2 size={18}/>, name: "Reliability Metrics", desc: "Real-time system health visualization", path: "/orm" },
-      { icon: <Wrench size={18}/>, name: "Stability Protocol", desc: "Automated fault-tolerance systems", path: "/orm" }
+      { icon: <ClipboardCheck size={18}/>, name: "Continuous Delivery", desc: "Automated CI/CD deployment pipelines", path: "/orm" },
+      { icon: <BarChart2 size={18}/>, name: "Infrastructure as Code", desc: "Declarative resource management", path: "/orm" },
+      { icon: <Wrench size={18}/>, name: "Cost Optimization", desc: "Real-time cloud spend analytics", path: "/orm" },
+      { icon: <LayoutDashboard size={18}/>, name: "Reliability Engineering", desc: "Site reliability & uptime monitoring", path: "/orm" },
+      { icon: <Layers3 size={18}/>, name: "Backup Automation", desc: "Scheduled data protection services", path: "/orm" }
     ]
   },
   {
     title: "Software Development",
     path: "/software-development",
     subItems: [
-      { icon: <LayoutDashboard size={18}/>, name: "App Architecture", desc: "Scalable enterprise software design", path: "/software-development" },
-      { icon: <Webhook size={18}/>, name: "API Engineering", desc: "Robust and secure interface services", path: "/software-development" },
-      { icon: <GitBranch size={18}/>, name: "DevOps Automation", desc: "Integrated CI/CD and orchestration", path: "/software-development" }
+      { icon: <LayoutDashboard size={18}/>, name: "Custom Enterprise Apps", desc: "Tailored full-stack cloud applications", path: "/software-development" },
+      { icon: <Webhook size={18}/>, name: "API & Microservices", desc: "Robust backend interface engineering", path: "/software-development" },
+      { icon: <GitBranch size={18}/>, name: "Cloud Modernization", desc: "Legacy to cloud-native transformation", path: "/software-development" },
+      { icon: <Cpu size={18}/>, name: "QA & Automation", desc: "End-to-end software testing services", path: "/software-development" },
+      { icon: <BarChart2 size={18}/>, name: "AI Integration", desc: "Intelligent features & model deployment", path: "/software-development" }
     ]
   }
 ];
 
+
 const dropdownVariants = {
-  hidden: { opacity: 0, y: 12, scale: 0.95 },
+  hidden: { opacity: 0, y: 12, scale: 0.95, x: "-50%" },
   visible: {
     opacity: 1, y: 0, scale: 1,
     transition: { duration: 0.22, ease: [0.23, 1, 0.32, 1] }
@@ -130,13 +141,16 @@ function MegaMenu() {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    className="absolute top-[calc(100%+4px)] left-1/2 -translate-x-1/2 w-[380px] rounded-2xl overflow-hidden"
+                    className="absolute top-[calc(100%+4px)] left-1/2 w-[320px] rounded-2xl overflow-hidden"
+
+
                     style={{
-                      background: 'linear-gradient(135deg, rgba(20,60,120,0.98) 0%, rgba(10,40,90,0.98) 60%, rgba(5,25,60,0.98) 100%)',
+                      background: 'linear-gradient(135deg, rgba(13, 36, 64, 0.98) 0%, rgba(8, 112, 184, 0.95) 100%)',
                       border: '1px solid rgba(99,179,237,0.25)',
-                      boxShadow: '0 8px 40px rgba(59,130,246,0.35), 0 0 0 1px rgba(99,179,237,0.1), inset 0 1px 0 rgba(255,255,255,0.08)'
+                      boxShadow: '0 20px 50px rgba(0,0,0,0.5), 0 0 0 1px rgba(99,179,237,0.1), inset 0 1px 0 rgba(255,255,255,0.08)'
                     }}
                   >
+
                     {/* Top glow bar */}
                     <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-60" />
 
@@ -172,7 +186,7 @@ function MegaMenu() {
 
                             <div>
                               <div className="font-semibold text-white text-sm leading-tight mb-0.5 group-hover:text-blue-200 transition-colors">{sub.name}</div>
-                              <div className="text-blue-300/60 text-xs leading-relaxed">{sub.desc}</div>
+                              <div className="text-blue-100/70 text-xs leading-relaxed">{sub.desc}</div>
                             </div>
                           </Link>
                         </motion.div>
