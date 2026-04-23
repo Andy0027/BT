@@ -11,20 +11,31 @@ const Footer = () => {
       {/* Grid Section */}
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Branding Section */}
-        <div>
-          <Link to="/" className="inline-block mb-10 -ml-8 md:-ml-14">
+        <div className="flex flex-col -mt-8">
+          <Link to="/" className="inline-block mb-0 -ml-8 md:-ml-14">
             <img 
               src={finalLogo} 
               alt="Brilliant Technologies" 
               className="h-32 md:h-44 w-auto object-contain origin-left"
             />
           </Link>
-          <p className="text-gray-300 text-sm leading-relaxed mb-4">
+          <div className="-mt-16 px-1 md:px-0 text-center md:text-left">
+            <p className="text-blue-400 font-bold text-sm tracking-tight mb-4 italic whitespace-nowrap">
+              Infrastructure That Moves With You
+            </p>
+
+
+          </div>
+
+          <p className="text-gray-300 text-sm leading-relaxed mb-6">
             Brilliant Technologies provides scalable, secure, and high-performance cloud infrastructure solutions for modern businesses.
           </p>
+
+
+
           <div className="space-y-3">
-            <div className="flex items-center gap-2 text-gray-300 text-sm hover:text-white transition group">
-              <MdLocationOn className="text-blue-400 group-hover:text-blue-300 transition-colors flex-shrink-0" />
+            <div className="flex items-start gap-2 text-gray-300 text-sm hover:text-white transition group">
+              <MdLocationOn className="text-blue-400 group-hover:text-blue-300 transition-colors flex-shrink-0 mt-0.5" />
               <span>12810 Hillcrest Road, Dallas, TX 75230</span>
             </div>
             <div className="flex items-center gap-2">
@@ -36,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* Solutions */}
-        <div>
+        <div className="lg:pl-10">
           <h3 className="text-lg font-semibold mb-4">Solutions</h3>
           <ul className="space-y-2 text-sm">
             {solutions.map((item) => (
@@ -50,7 +61,7 @@ const Footer = () => {
         </div>
 
         {/* Resources */}
-        <div>
+        <div className="lg:pl-10">
           <h3 className="text-lg font-semibold mb-4">Resources</h3>
           <ul className="space-y-2 text-sm">
             {resources.map((item) => (
@@ -64,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* Company Info */}
-        <div>
+        <div className="lg:pl-10">
           <h3 className="text-lg font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm">
             {company.map((item) => (
@@ -78,7 +89,7 @@ const Footer = () => {
         </div>
 
         {/* Legal */}
-        <div>
+        <div className="lg:pl-10">
           <h3 className="text-lg font-semibold mb-4">Legal</h3>
           <ul className="space-y-2 text-sm">
             {legal.map((item) => (

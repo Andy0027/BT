@@ -65,11 +65,8 @@ export let company = [
         name:"Executive Team",
         to:"company"
     },
-    {
-        name:"Careers",
-        to:"contact"
-    },
 ]
+
 
 export let legal = [
     {

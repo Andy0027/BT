@@ -26,6 +26,8 @@ import Cybersecurity from "../components/CyberSecurity";
 import Testimonial from "../components/Testimonial";
 import CTA from "../components/CTA";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 import HeroInfraVisual from "../components/HeroInfraVisual";
 
@@ -57,36 +59,104 @@ function Home() {
 
   return (
     <main>
-        {/* video */}
-        <section className="bg-navy-main relative min-h-screen overflow-hidden">
+     <section className="bg-navy-main relative min-h-screen overflow-hidden flex items-center justify-center">
       <div className="absolute inset-0 z-0">
         <CloudNetworkBackground />
       </div>
 
-      <div className={`${style.video_bg} relative z-10 flex flex-col justify-center items-center min-h-screen text-center px-4 pt-32 pb-16 gap-12`}>
-        <div data-aos="fade-down" data-aos-duration="1000">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style={{fontWeight: 500, color: "rgb(220, 220, 225)"}} >
-            Power Your <span className="text-blue-primary">Infrastructure</span> with <br className="hidden sm:block" /> Reliable Cloud Solutions
-          </h2>
-        </div>
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-24 pb-16 flex flex-col items-center text-center">
+        {/* Main Heading Group */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-8"
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-[1.2]">
+            Power Your <span className="text-blue-400">Infrastructure</span> <br className="hidden md:block" /> 
+            with Next-Gen Cloud 
+          </h1>
 
-        <div className="w-full max-w-2xl" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 1 }}
+            className="mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed"
+          >
+            Deploy faster, scale smarter, and stay secure with enterprise-grade 
+            solutions built for the future of digital business.
+          </motion.p>
+        </motion.div>
+
+        {/* Visual Component with Entrance Reveal */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 1, ease: "easeOut" }}
+          className="w-full max-w-4xl mb-12 relative"
+        >
+          <div className="absolute -inset-10 bg-blue-500/10 blur-[100px] rounded-full pointer-events-none" />
           <HeroInfraVisual />
-        </div>
+        </motion.div>
 
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-tight font-bold mb-8">
-            Deploy Faster, <span className="text-blue-primary">Scale Smarter</span><br className="hidden sm:block" />
-            Stay Secure with <span className="text-blue-primary">Enterprise Cloud</span>
-          </h2>
-         <Link to="contact">
-          <button className="text-base sm:text-lg md:text-xl rounded-full text-white border border-white/20 bg-blue-primary/10 backdrop-blur-sm px-8 py-3 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-2xl transition-all duration-300 font-bold tracking-wide">
-            Get Started
-          </button>
-         </Link>
-        </div>
+        {/* CTA Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="flex flex-col sm:flex-row gap-5 items-center justify-center p-4"
+        >
+          <Link to="contact">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="group relative px-10 py-4 bg-blue-primary text-white font-bold rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(59,130,246,0.6)]"
+            >
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
+              
+              {/* Button Content */}
+              <span className="relative z-10 flex items-center gap-2">
+                Start Your Journey
+                <motion.span
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ repeat: Infinity, duration: 1.5 }}
+                >
+                  →
+                </motion.span>
+              </span>
+
+              {/* Glowing ring on hover */}
+              <div className="absolute inset-0 border-2 border-white/0 rounded-full group-hover:border-white/20 transition-all duration-300" />
+            </motion.button>
+          </Link>
+
+          <Link to="solutions">
+            <motion.button 
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.12)" }}
+              whileTap={{ scale: 0.98 }}
+              className="px-10 py-4 text-white font-bold rounded-full border border-white/20 bg-white/5 backdrop-blur-md hover:border-white/40 transition-all duration-300 group"
+            >
+               <span className="group-hover:text-blue-200 transition-colors">Explore Solutions</span>
+            </motion.button>
+          </Link>
+        </motion.div>
+
+
+        {/* Bottom Scroll Indicator - Optional but adds "wow" */}
+        <motion.div 
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-30 hidden lg:block"
+        >
+          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center pt-2">
+            <div className="w-1 h-2 bg-white rounded-full" />
+          </div>
+        </motion.div>
       </div>
     </section>
+
 
 
     <section className="relative overflow-hidden bg-blue-light-1 py-12 lg:py-16">
