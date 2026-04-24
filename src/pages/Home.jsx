@@ -333,7 +333,7 @@ function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-32 min-h-[500px]">
              {/* Left Column: Text Stack */}
              <div className="w-full lg:w-5/12 relative h-[400px] perspective-1000">
-                <AnimatePresence>
+                 <AnimatePresence mode="popLayout">
                   {capabilities.map((cap, idx) => {
                     // Logic to determine position in the stack relative to activeCapIndex
                     const position = (idx - activeCapIndex + capabilities.length) % capabilities.length;
@@ -344,7 +344,7 @@ function Home() {
                       <motion.div
                         key={idx}
                         style={{ zIndex: 10 - position }}
-                        initial={{ opacity: 0, x: -50, scale: 0.8 }}
+                        initial={{ opacity: 0, x: -30, scale: 0.9 }}
                         animate={{
                           opacity: 1 - position * 0.3,
                           x: position * 40,
@@ -352,12 +352,12 @@ function Home() {
                           scale: 1 - position * 0.05,
                           filter: `blur(${position * 2}px)`
                         }}
-                        exit={{ opacity: 0, x: 200, scale: 0.8, rotate: 10 }}
-                        transition={{ duration: 0.8, ease: "circOut" }}
+                        exit={{ opacity: 0, x: 100, scale: 0.9, filter: "blur(4px)" }}
+                        transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
                         className="absolute inset-0 cursor-pointer"
                         onClick={() => setActiveCapIndex(idx)}
                       >
-                        <div className={`h-full p-10 rounded-[2.5rem] border shadow-2xl flex flex-col justify-center transition-all duration-500 ${position === 0 ? "bg-white border-blue-primary/30" : "bg-white/60 backdrop-blur-2xl border-navy-main/10"}`}>
+                        <div className={`h-full p-10 rounded-[2.5rem] border shadow-2xl flex flex-col justify-center transition-all duration-700 ${position === 0 ? "bg-white border-blue-primary/30" : "bg-white/60 backdrop-blur-2xl border-navy-main/10"}`}>
                           <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg`} style={{ backgroundColor: `${cap.accent}20`, color: cap.accent }}>
                              {position === 0 && <motion.div layoutId="accent-blob" className="absolute w-20 h-20 bg-blue-primary/10 rounded-full blur-2xl" />}
                              <div className="relative z-10 text-2xl">
@@ -396,7 +396,7 @@ function Home() {
 
              {/* Right Column: Visual Stack */}
              <div className="w-full lg:w-6/12 relative h-[450px]">
-                <AnimatePresence>
+                <AnimatePresence mode="popLayout">
                   {capabilities.map((cap, idx) => {
                     const position = (idx - activeCapIndex + capabilities.length) % capabilities.length;
                     
@@ -406,7 +406,7 @@ function Home() {
                       <motion.div
                         key={idx}
                         style={{ zIndex: 10 - position }}
-                        initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                        initial={{ opacity: 0, y: 30, scale: 0.9 }}
                         animate={{
                           opacity: 1 - position * 0.4,
                           x: -position * 60,
@@ -414,11 +414,11 @@ function Home() {
                           scale: 1 - position * 0.1,
                           rotate: position * -2
                         }}
-                        exit={{ opacity: 0, x: -200, scale: 1.1, rotate: -10 }}
-                        transition={{ duration: 1, ease: "circOut" }}
+                        exit={{ opacity: 0, x: -100, scale: 1.05, filter: "blur(4px)" }}
+                        transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
                         className="absolute inset-0"
                       >
-                        <div className={`relative w-full h-full rounded-[3rem] overflow-hidden shadow-2xl border transition-all duration-500 flex items-center justify-center p-12 ${position === 0 ? "bg-white border-white" : "bg-white/40 backdrop-blur-2xl border-white/40"}`}>
+                        <div className={`relative w-full h-full rounded-[3rem] overflow-hidden shadow-2xl border transition-all duration-700 flex items-center justify-center p-12 ${position === 0 ? "bg-white border-white" : "bg-white/40 backdrop-blur-2xl border-white/40"}`}>
                           <div className="absolute inset-0 bg-gradient-to-tr from-navy-main/5 via-transparent to-transparent opacity-30" />
                           
                           {/* Main Chart Visual */}
