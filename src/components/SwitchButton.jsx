@@ -13,12 +13,12 @@ const Switchbutton = () => {
     <div className="bg-[#E7F0FA] w-full h-auto shadow-sm px-4 sm:px-8 lg:px-32 py-16 sm:py-20 border-t-[0.7px] border-[#0D24401A]">
       <div className="flex flex-col items-center">
         <h1
-          className="text-3xl sm:text-5xl text-center font-normal tracking-tight text-[#0D2440]"
+          className="text-3xl sm:text-5xl text-center font-semibold tracking-tight text-[#0D2440]"
           data-aos="fade-up"
           data-aos-duration="1000"
           style={{ fontFamily: 'Instrument Regular' }}
         >
-          Resources
+          Expert Insights for the <span className="text-blue-primary">Infinite Cloud</span>
         </h1>
 
         {/* Switch */}

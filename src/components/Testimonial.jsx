@@ -30,25 +30,18 @@ export default function Testimonial() {
   }, []);
 
   return (
-    <section className="bg-[#E7F0FA] shadow-inner px-4 sm:px-6 lg:px-24 py-10 sm:py-16">
+    <section className="bg-[#E7F0FA] shadow-inner px-4 sm:px-6 lg:px-24 pt-10 pb-6 sm:pt-16 sm:pb-10">
       {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto">
+      <div className="flex flex-col items-center text-center max-w-7xl mx-auto">
         <h2
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-primary pb-2"
+          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-primary pb-2 lg:whitespace-nowrap"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          Performance, Savings, Success –
+          Performance, Savings, Success – <span className="text-navy-main">Hear it from those who built with us</span>
         </h2>
-        <h3
-          className="text-xl sm:text-2xl font-semibold text-navy-main"
-          data-aos="fade-up"
-          data-aos-duration="1100"
-        >
-          Hear it from those who built with us
-        </h3>
         <p
-          className="text-[#61616b] text-sm sm:text-base pt-4 sm:pt-5"
+          className="text-[#61616b] text-base sm:text-lg pt-4 sm:pt-5 max-w-2xl"
           data-aos="fade-up"
           data-aos-duration="1200"
         >
