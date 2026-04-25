@@ -58,7 +58,7 @@ const SoftwareSolution = () => {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-navy-main/5 rounded-full blur-[120px] -z-0" />
       
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto text-center mb-10 px-6">
+        <div className="max-w-[1400px] mx-auto text-center mb-10 px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -41,7 +41,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-transparent px-8 md:px-16 lg:px-32 py-16">
+    <div className="bg-transparent py-16 max-w-[1400px] mx-auto px-6 lg:px-8 w-full">
       <div className="flex flex-col gap-8">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row gap-6 text-white">

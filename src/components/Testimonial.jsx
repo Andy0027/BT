@@ -30,9 +30,9 @@ export default function Testimonial() {
   }, []);
 
   return (
-    <section className="bg-transparent px-4 sm:px-6 lg:px-24 pt-10 pb-6 sm:pt-16 sm:pb-10">
+    <section className="bg-transparent max-w-[1400px] mx-auto w-full px-6 lg:px-8 pt-10 pb-6 sm:pt-16 sm:pb-10">
       {/* Heading */}
-      <div className="flex flex-col items-center text-center max-w-7xl mx-auto">
+      <div className="flex flex-col items-center text-center w-full">
         <h2
           className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-400 pb-2 lg:whitespace-nowrap"
           data-aos="fade-up"

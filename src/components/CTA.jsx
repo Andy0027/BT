@@ -33,7 +33,7 @@ const StatCard = ({ value, label, delay = 0, widthClass = "w-full" }) => (
 
 const CTA = () => {
     return (
-        <div className="px-6 md:px-12 py-8">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 py-8 w-full">
             <section className="relative overflow-hidden py-14 rounded-[3rem] bg-[#030b1a] border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
                 {/* Premium Futuristic Grid Background */}
                 <FuturisticGridBackground />

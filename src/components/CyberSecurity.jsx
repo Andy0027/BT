@@ -56,7 +56,7 @@ export default function Cybersecurity() {
   const maxValue = Math.max(...data.map((item) => item.value));
 
   return (
-    <div className="min-h-auto text-white flex flex-col px-6 sm:px-10 md:px-20 lg:px-32 items-center justify-center py-24 border-b border-white/5 bg-transparent">
+    <div className="min-h-auto text-white flex flex-col max-w-[1400px] mx-auto w-full px-6 lg:px-8 items-center justify-center py-24 border-b border-white/5 bg-transparent">
       <div className="flex flex-col items-center text-center">
         <h2 className="text-white text-3xl md:text-4xl font-semibold pt-3 pb-3">Enterprise-Grade Security for Your Infrastructure</h2>
         <h2 className="text-xl md:text-2xl font-semibold text-blue-400 pt-2">Advanced Protection for the Modern Cloud</h2>

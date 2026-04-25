@@ -24,7 +24,7 @@ const DisciplineCard = ({ number, title, description, delay = 0 }) => (
 const OperatingPartner = () => {
   return (
     <div className="w-full bg-[#020817] py-24 border-y border-white/5">
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
         {/* Header Section */}
         <div className="mb-16 max-w-3xl">
           <motion.p

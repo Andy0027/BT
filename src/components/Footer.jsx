@@ -8,7 +8,8 @@ import finalLogo from '../assets/images/Brilliant_Technologies_logo_design__2_-r
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0D2440] text-white px-6 py-12 md:px-32 border-t border-[#FFFFFF0D]">
+    <footer className="bg-[#0D2440] text-white py-12 border-t border-[#FFFFFF0D] w-full">
+      <div className="max-w-[1400px] mx-auto w-full px-6 lg:px-8">
       {/* Horizontal Newsletter Section */}
       <div className="mb-16 pb-12 border-b border-white/10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -149,6 +150,7 @@ const Footer = () => {
             <FaXTwitter size={20} />
           </Link>
         </div>
+      </div>
       </div>
     </footer>
   );

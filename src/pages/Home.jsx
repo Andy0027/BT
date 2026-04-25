@@ -147,7 +147,7 @@ function Home() {
           <CloudNetworkBackground />
         </div>
 
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 pt-32 pb-10">
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-8 pt-32 pb-10">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-16 items-center text-left">
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -254,15 +254,15 @@ function Home() {
 
 
       {/* your digital — AUTO-ROTATING PREMIUM REDESIGN */}
-      <section className="relative overflow-hidden py-12 md:py-16 px-4 sm:px-8 md:px-16 bg-transparent">
+      <section className="relative overflow-hidden py-12 md:py-16 bg-transparent">
         {/* Background decorative dark blue glows */}
         <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-blue-500/5 rounded-full blur-[150px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-500/5 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-400/5 rounded-full blur-[200px] pointer-events-none" />
         <div className="absolute inset-0 pointer-events-none opacity-[0.1]" style={{ backgroundImage: "radial-gradient(circle, #7BA4D0 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
 
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-10 px-4">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-10">
             <motion.div initial={{ opacity: 0, y: -16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex justify-center mb-4">
               <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/10 bg-white/5 text-slate-300 text-xs font-semibold uppercase tracking-widest backdrop-blur-sm">
                 Next-Gen Cloud Backbone
@@ -330,7 +330,7 @@ function Home() {
       {/* Infrastructure Powered By Section */}
       <section className="py-12 bg-white/5 relative overflow-hidden backdrop-blur-sm border-y border-white/5">
         <div className="absolute inset-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, #7BA4D0 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 relative z-10">
           <div className="flex flex-col items-center overflow-hidden">
             <p className="text-white/60 text-sm font-bold uppercase tracking-[0.5em] mb-8">Infrastructure Powered By</p>
             <div className="w-full">
@@ -355,8 +355,8 @@ function Home() {
         {/* Background Decorative Mesh */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[150px] -z-0" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-500/5 rounded-full blur-[120px] -z-0" />
-        <div className="container mx-auto px-6 relative z-20">
-          <div className="text-center mb-16 max-w-7xl mx-auto px-6">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 relative z-20">
+          <div className="text-center mb-16 w-full">
             <div className="flex flex-col items-center">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}

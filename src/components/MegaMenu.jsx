@@ -103,7 +103,7 @@ function MegaMenu() {
 
   return (
     <nav className="fixed top-4 left-0 right-0 z-[9999] px-4 sm:px-6">
-      <div className="mx-auto max-w-7xl bg-[#0D2440]/80 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl shadow-black/40 py-2 px-6 lg:px-8 flex justify-between items-center relative">
+      <div className="mx-auto max-w-[1400px] bg-[#0D2440]/80 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl shadow-black/40 py-2 px-6 lg:px-8 flex justify-between items-center relative">
         {/* Glow effect inside navbar */}
         <div className="absolute top-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
         

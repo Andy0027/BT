@@ -10,7 +10,7 @@ const Switchbutton = () => {
   const [isBlog, setIsBlog] = useState(true);
 
   return (
-    <div className="bg-transparent w-full h-auto px-4 sm:px-8 lg:px-32 py-16 sm:py-20 border-t border-white/5">
+    <div className="bg-transparent w-full h-auto py-16 sm:py-20 border-t border-white/5 max-w-[1400px] mx-auto px-6 lg:px-8">
       <div className="flex flex-col items-center">
         <h1
           className="text-3xl sm:text-5xl text-center font-semibold tracking-tight text-white"
