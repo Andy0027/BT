@@ -5,7 +5,7 @@ import bgImg from '../assets/images/Banner-bg.jpeg';
 
 function Newsletter() {
   return (
-    <div className="w-full h-auto pt-6 pb-12 px-6 sm:px-6 md:px-32 bg-[#E7F0FA] lg:pt-14 lg:pb-24">
+    <div className="w-full h-auto pt-6 pb-12 px-6 sm:px-6 md:px-32 bg-transparent lg:pt-14 lg:pb-24">
       <div
         className="relative bg-cover bg-center rounded-2xl py-12 px-4 sm:px-8 lg:py-20 flex flex-col items-center text-center lg:mt-12 shadow-2xl overflow-hidden brightness-[1.1]"
         style={{ backgroundImage: `url(${bgImg})` }}

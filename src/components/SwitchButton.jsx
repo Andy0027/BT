@@ -10,15 +10,15 @@ const Switchbutton = () => {
   const [isBlog, setIsBlog] = useState(true);
 
   return (
-    <div className="bg-[#E7F0FA] w-full h-auto shadow-sm px-4 sm:px-8 lg:px-32 py-16 sm:py-20 border-t-[0.7px] border-[#0D24401A]">
+    <div className="bg-transparent w-full h-auto px-4 sm:px-8 lg:px-32 py-16 sm:py-20 border-t border-white/5">
       <div className="flex flex-col items-center">
         <h1
-          className="text-3xl sm:text-5xl text-center font-semibold tracking-tight text-[#0D2440]"
+          className="text-3xl sm:text-5xl text-center font-semibold tracking-tight text-white"
           data-aos="fade-up"
           data-aos-duration="1000"
           style={{ fontFamily: 'Instrument Regular' }}
         >
-          Expert Insights for the <span className="text-blue-primary">Infinite Cloud</span>
+          Expert Insights for the <span className="text-blue-400">Infinite Cloud</span>
         </h1>
 
         {/* Switch */}
@@ -27,7 +27,7 @@ const Switchbutton = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          <label className="text-xl sm:text-2xl font-medium text-[#0D2440]">Blog</label>
+          <label className="text-xl sm:text-2xl font-medium text-white">Blog</label>
           <label className="relative inline-flex items-center cursor-pointer">
             <input
               type="checkbox"
@@ -37,7 +37,7 @@ const Switchbutton = () => {
             <div className="group peer bg-blue-primary rounded-full duration-1000 after:duration-300 w-20 sm:w-24 h-10 sm:h-12 shadow-md after:content-[''] after:rounded-full after:absolute after:bg-white after:outline-none after:h-8 sm:after:h-10 after:w-8 sm:after:w-10 after:top-1 after:left-1 peer-checked:after:translate-x-10 sm:peer-checked:after:translate-x-12"></div>
 
           </label>
-          <label className="text-xl sm:text-2xl font-medium text-[#0D2440]">Reports</label>
+          <label className="text-xl sm:text-2xl font-medium text-white">Reports</label>
         </div>
 
         {/* Card Section */}
@@ -45,24 +45,24 @@ const Switchbutton = () => {
           {(isBlog ? blogData : reportData).map((item, index) => (
             <div
               key={index}
-              className="w-full h-auto bg-white border border-[#0D244015] rounded-lg p-5 shadow-sm"
+              className="w-full h-auto bg-white/5 border border-white/10 rounded-lg p-5 shadow-sm hover:bg-white/10 transition-colors"
               data-aos="fade-up"
               data-aos-duration={`${1300 + index * 300}`}
             >
-              <div className="w-full h-48 mb-4 bg-gray-50 rounded-lg flex items-center justify-center p-2 border border-gray-100">
+              <div className="w-full h-48 mb-4 bg-white/10 rounded-lg flex items-center justify-center p-2 border border-white/10">
                 <img
                   src={item.image}
                   alt="Card"
                   className="max-w-full max-h-full object-contain rounded-md"
                 />
               </div>
-              <h1 className="text-[#0D2440] text-lg sm:text-xl font-semibold mb-2">
+              <h1 className="text-white text-lg sm:text-xl font-semibold mb-2">
                 {item.title}
               </h1>
-              <p className="text-[#4B5563] text-sm sm:text-base font-light mb-2">
+              <p className="text-slate-400 text-sm sm:text-base font-light mb-2">
                 {item.description}
               </p>
-              <p className="text-blue-primary text-sm">{item.date}</p>
+              <p className="text-blue-400 text-sm">{item.date}</p>
             </div>
           ))}
         </div>

@@ -102,12 +102,15 @@ function MegaMenu() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full py-2 px-6 lg:py-2 lg:px-32 shadow-lg z-[9999] bg-[#0D2440] border-b border-[#FFFFFF0D]">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="fixed top-4 left-0 right-0 z-[9999] px-4 sm:px-6">
+      <div className="mx-auto max-w-7xl bg-[#0D2440]/80 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl shadow-black/40 py-2 px-6 lg:px-8 flex justify-between items-center relative">
+        {/* Glow effect inside navbar */}
+        <div className="absolute top-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+        
 
-        <div className="h-14 md:h-16 w-36 md:w-56 flex items-center relative">
-          <Link to="/" className="absolute left-[-32px] md:left-[-56px] top-1/2 -translate-y-1/2">
-            <img src={finalLogo} alt="Brilliant Technologies" className="h-[140px] md:h-[186px] w-auto object-contain origin-left" />
+        <div className="h-12 md:h-14 w-40 md:w-64 flex items-center relative">
+          <Link to="/" className="absolute left-[-10px] md:left-[-30px] top-1/2 -translate-y-1/2">
+            <img src={finalLogo} alt="Brilliant Technologies" className="h-[140px] md:h-[180px] w-auto object-contain origin-left" />
           </Link>
         </div>
 
@@ -118,7 +121,7 @@ function MegaMenu() {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex space-x-1 text-base font-medium text-white h-16 items-center">
+        <ul className="hidden lg:flex space-x-2 text-sm font-medium text-white/90 h-14 items-center">
           {menuData.map((item, idx) => (
             <li
               key={idx}
@@ -141,7 +144,7 @@ function MegaMenu() {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    className="absolute top-[calc(100%+4px)] left-1/2 w-[320px] rounded-2xl overflow-hidden"
+                    className="absolute top-[calc(100%+12px)] left-1/2 w-[320px] rounded-2xl overflow-hidden shadow-2xl"
 
 
                     style={{
@@ -204,8 +207,8 @@ function MegaMenu() {
 
         {/* CTA Button */}
         <Link to="/contact" className="hidden lg:block">
-          <button className="bg-blue-primary text-white font-bold py-2.5 px-8 rounded-full border border-blue-primary/50 shadow-lg shadow-blue-primary/10 hover:bg-white hover:text-blue-primary hover:border-white hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
-            Contact Us
+          <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-full border border-blue-400/30 shadow-lg shadow-blue-600/10 hover:bg-white hover:text-blue-600 transition-all duration-300 text-sm">
+            Get Started
           </button>
         </Link>
       </div>

@@ -9,6 +9,39 @@ import finalLogo from '../assets/images/Brilliant_Technologies_logo_design__2_-r
 const Footer = () => {
   return (
     <footer className="bg-[#0D2440] text-white px-6 py-12 md:px-32 border-t border-[#FFFFFF0D]">
+      {/* Horizontal Newsletter Section */}
+      <div className="mb-16 pb-12 border-b border-white/10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+          {/* Left: Text Content */}
+          <div className="text-center lg:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Stay Ahead of the Cloud</h2>
+            <p className="text-blue-subtle/60 text-sm md:text-base">
+              Get the latest architectural strategies and infrastructure insights delivered weekly.
+            </p>
+          </div>
+          
+          {/* Right: Input Group */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+            <div className="relative w-full sm:w-[350px]">
+              <input 
+                type="email" 
+                placeholder="Enter your email address"
+                className="w-full bg-white text-[#0D2440] rounded-full px-6 py-3.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-lg"
+              />
+            </div>
+            <button className="group relative overflow-hidden bg-blue-600 border border-blue-500 hover:bg-white hover:border-white text-white hover:text-blue-600 font-extrabold px-10 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-blue-600/30 hover:shadow-2xl hover:shadow-white/20 hover:-translate-y-1 uppercase tracking-wider text-sm">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                Subscribe
+                <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
       {/* Grid Section */}
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Branding Section */}
